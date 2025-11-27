@@ -1,4 +1,7 @@
 venv/
+critical-paths/
+
+.vscode/
 
 __pycache__/
 *.pyc

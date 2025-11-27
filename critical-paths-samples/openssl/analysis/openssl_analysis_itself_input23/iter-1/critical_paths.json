@@ -1,0 +1,2040 @@
+{
+    "summary": {
+        "num_paths_requested": 10,
+        "num_paths_found": 10,
+        "num_threads": 1,
+        "total_function_calls": 222
+    },
+    "top_k_critical_paths": [
+        {
+            "rank": 1,
+            "thread_id": "399536",
+            "critical_duration_ns": 538000,
+            "critical_duration_formatted": "538.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 6,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "dup_bio_in",
+                    "duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435931904",
+                    "start_time": "2025-10-15T04:40:31.435931904",
+                    "end_time": "2025-10-15T04:40:31.436470016"
+                },
+                {
+                    "function_name": "BIO_new_fp",
+                    "duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435936256",
+                    "start_time": "2025-10-15T04:40:31.435936256",
+                    "end_time": "2025-10-15T04:40:31.436469760"
+                },
+                {
+                    "function_name": "BIO_new",
+                    "duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940352",
+                    "start_time": "2025-10-15T04:40:31.435940352",
+                    "end_time": "2025-10-15T04:40:31.436467456"
+                },
+                {
+                    "function_name": "BIO_new_ex",
+                    "duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940608",
+                    "start_time": "2025-10-15T04:40:31.435940608",
+                    "end_time": "2025-10-15T04:40:31.436466944"
+                },
+                {
+                    "function_name": "CRYPTO_zalloc",
+                    "duration_ns": 294000,
+                    "self_time_ns": 294000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435944448",
+                    "start_time": "2025-10-15T04:40:31.435944448",
+                    "end_time": "2025-10-15T04:40:31.436238592"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "dup_bio_in",
+                    "total_duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 22.249793217535153
+                },
+                {
+                    "function": "BIO_new_fp",
+                    "total_duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 22.043010752688172
+                },
+                {
+                    "function": "BIO_new",
+                    "total_duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 21.794871794871796
+                },
+                {
+                    "function": "BIO_new_ex",
+                    "total_duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 21.7535153019024
+                },
+                {
+                    "function": "CRYPTO_zalloc",
+                    "total_duration_ns": 294000,
+                    "self_time_ns": 294000,
+                    "percentage_of_path": 12.158808933002481
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "thread_id": "399536",
+            "critical_duration_ns": 365000,
+            "critical_duration_formatted": "365.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 13,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "apps_startup",
+                    "duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436487168",
+                    "start_time": "2025-10-15T04:40:31.436487168",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_ssl",
+                    "duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491008",
+                    "start_time": "2025-10-15T04:40:31.436491008",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_crypto",
+                    "duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491776",
+                    "start_time": "2025-10-15T04:40:31.436491776",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495616",
+                    "start_time": "2025-10-15T04:40:31.436495616",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers_ossl_",
+                    "duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "openssl_add_all_ciphers_int",
+                    "duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436498688",
+                    "start_time": "2025-10-15T04:40:31.436498688",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "EVP_add_cipher",
+                    "duration_ns": 23000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436503040",
+                    "start_time": "2025-10-15T04:40:31.436503040",
+                    "end_time": "2025-10-15T04:40:31.436526336"
+                },
+                {
+                    "function_name": "OBJ_NAME_add",
+                    "duration_ns": 9000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436506880",
+                    "start_time": "2025-10-15T04:40:31.436506880",
+                    "end_time": "2025-10-15T04:40:31.436516608"
+                },
+                {
+                    "function_name": "lh_OBJ_NAME_insert",
+                    "duration_ns": 2000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436513536",
+                    "start_time": "2025-10-15T04:40:31.436513536",
+                    "end_time": "2025-10-15T04:40:31.436515840"
+                },
+                {
+                    "function_name": "OPENSSL_LH_insert",
+                    "duration_ns": 2000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436513792",
+                    "start_time": "2025-10-15T04:40:31.436513792",
+                    "end_time": "2025-10-15T04:40:31.436515840"
+                },
+                {
+                    "function_name": "getrn",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436513792",
+                    "start_time": "2025-10-15T04:40:31.436513792",
+                    "end_time": "2025-10-15T04:40:31.436515328"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "apps_startup",
+                    "total_duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 14.319340918007061
+                },
+                {
+                    "function": "OPENSSL_init_ssl",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.162416633974107
+                },
+                {
+                    "function": "OPENSSL_init_crypto",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 14.162416633974107
+                },
+                {
+                    "function": "CRYPTO_THREAD_run_once",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.005492349941154
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.005492349941154
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers_ossl_",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 14.005492349941154
+                },
+                {
+                    "function": "openssl_add_all_ciphers_int",
+                    "total_duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "percentage_of_path": 13.887799136916437
+                },
+                {
+                    "function": "EVP_add_cipher",
+                    "total_duration_ns": 23000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 0.9023146331894861
+                },
+                {
+                    "function": "OBJ_NAME_add",
+                    "total_duration_ns": 9000,
+                    "self_time_ns": 7000,
+                    "percentage_of_path": 0.3530796390741467
+                },
+                {
+                    "function": "lh_OBJ_NAME_insert",
+                    "total_duration_ns": 2000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.07846214201647705
+                }
+            ]
+        },
+        {
+            "rank": 3,
+            "thread_id": "399536",
+            "critical_duration_ns": 538000,
+            "critical_duration_formatted": "538.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 19,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "dup_bio_in",
+                    "duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435931904",
+                    "start_time": "2025-10-15T04:40:31.435931904",
+                    "end_time": "2025-10-15T04:40:31.436470016"
+                },
+                {
+                    "function_name": "BIO_new_fp",
+                    "duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435936256",
+                    "start_time": "2025-10-15T04:40:31.435936256",
+                    "end_time": "2025-10-15T04:40:31.436469760"
+                },
+                {
+                    "function_name": "BIO_new",
+                    "duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940352",
+                    "start_time": "2025-10-15T04:40:31.435940352",
+                    "end_time": "2025-10-15T04:40:31.436467456"
+                },
+                {
+                    "function_name": "BIO_new_ex",
+                    "duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940608",
+                    "start_time": "2025-10-15T04:40:31.435940608",
+                    "end_time": "2025-10-15T04:40:31.436466944"
+                },
+                {
+                    "function_name": "CRYPTO_new_ex_data",
+                    "duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240128",
+                    "start_time": "2025-10-15T04:40:31.436240128",
+                    "end_time": "2025-10-15T04:40:31.436466432"
+                },
+                {
+                    "function_name": "ossl_crypto_new_ex_data_ex",
+                    "duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240640",
+                    "start_time": "2025-10-15T04:40:31.436240640",
+                    "end_time": "2025-10-15T04:40:31.436466176"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_ex_data_global",
+                    "duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436241408",
+                    "start_time": "2025-10-15T04:40:31.436241408",
+                    "end_time": "2025-10-15T04:40:31.436463104"
+                },
+                {
+                    "function_name": "get_default_context",
+                    "duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_concrete",
+                    "duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "get_thread_default_context",
+                    "duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242688",
+                    "start_time": "2025-10-15T04:40:31.436242688",
+                    "end_time": "2025-10-15T04:40:31.436462592"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 215000,
+                    "self_time_ns": 14000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436246272",
+                    "start_time": "2025-10-15T04:40:31.436246272",
+                    "end_time": "2025-10-15T04:40:31.436462080"
+                },
+                {
+                    "function_name": "default_context_do_init_ossl_",
+                    "duration_ns": 201000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461312"
+                },
+                {
+                    "function_name": "default_context_do_init",
+                    "duration_ns": 200000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461056"
+                },
+                {
+                    "function_name": "context_init",
+                    "duration_ns": 199000,
+                    "self_time_ns": 55000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436261120",
+                    "start_time": "2025-10-15T04:40:31.436261120",
+                    "end_time": "2025-10-15T04:40:31.436460800"
+                },
+                {
+                    "function_name": "ossl_property_parse_init",
+                    "duration_ns": 71000,
+                    "self_time_ns": 20000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436379904",
+                    "start_time": "2025-10-15T04:40:31.436379904",
+                    "end_time": "2025-10-15T04:40:31.436451584"
+                },
+                {
+                    "function_name": "ossl_property_name",
+                    "duration_ns": 14000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436380160",
+                    "start_time": "2025-10-15T04:40:31.436380160",
+                    "end_time": "2025-10-15T04:40:31.436394752"
+                },
+                {
+                    "function_name": "ossl_property_string",
+                    "duration_ns": 14000,
+                    "self_time_ns": 11000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436380416",
+                    "start_time": "2025-10-15T04:40:31.436380416",
+                    "end_time": "2025-10-15T04:40:31.436394752"
+                },
+                {
+                    "function_name": "lh_PROPERTY_STRING_retrieve",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436382208",
+                    "start_time": "2025-10-15T04:40:31.436382208",
+                    "end_time": "2025-10-15T04:40:31.436384768"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "dup_bio_in",
+                    "total_duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 12.30839624799817
+                },
+                {
+                    "function": "BIO_new_fp",
+                    "total_duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.194005948295585
+                },
+                {
+                    "function": "BIO_new",
+                    "total_duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 12.056737588652481
+                },
+                {
+                    "function": "BIO_new_ex",
+                    "total_duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.033859528711965
+                },
+                {
+                    "function": "CRYPTO_new_ex_data",
+                    "total_duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.170441546556852
+                },
+                {
+                    "function": "ossl_crypto_new_ex_data_ex",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.147563486616335
+                },
+                {
+                    "function": "ossl_lib_ctx_get_ex_data_global",
+                    "total_duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.056051246854267
+                },
+                {
+                    "function": "get_default_context",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.03317318691375
+                },
+                {
+                    "function": "ossl_lib_ctx_get_concrete",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.03317318691375
+                },
+                {
+                    "function": "get_thread_default_context",
+                    "total_duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.010295126973233
+                }
+            ]
+        },
+        {
+            "rank": 4,
+            "thread_id": "399536",
+            "critical_duration_ns": 365000,
+            "critical_duration_formatted": "365.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 5,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "apps_startup",
+                    "duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436487168",
+                    "start_time": "2025-10-15T04:40:31.436487168",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_ssl",
+                    "duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491008",
+                    "start_time": "2025-10-15T04:40:31.436491008",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_crypto",
+                    "duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491776",
+                    "start_time": "2025-10-15T04:40:31.436491776",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436492544",
+                    "start_time": "2025-10-15T04:40:31.436492544",
+                    "end_time": "2025-10-15T04:40:31.436494080"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "apps_startup",
+                    "total_duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 33.54779411764706
+                },
+                {
+                    "function": "OPENSSL_init_ssl",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 33.18014705882353
+                },
+                {
+                    "function": "OPENSSL_init_crypto",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 33.18014705882353
+                },
+                {
+                    "function": "CRYPTO_THREAD_run_once",
+                    "total_duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.09191176470588235
+                }
+            ]
+        },
+        {
+            "rank": 5,
+            "thread_id": "399536",
+            "critical_duration_ns": 365000,
+            "critical_duration_formatted": "365.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 16,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "apps_startup",
+                    "duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436487168",
+                    "start_time": "2025-10-15T04:40:31.436487168",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_ssl",
+                    "duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491008",
+                    "start_time": "2025-10-15T04:40:31.436491008",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_crypto",
+                    "duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491776",
+                    "start_time": "2025-10-15T04:40:31.436491776",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495616",
+                    "start_time": "2025-10-15T04:40:31.436495616",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers_ossl_",
+                    "duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "openssl_add_all_ciphers_int",
+                    "duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436498688",
+                    "start_time": "2025-10-15T04:40:31.436498688",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "EVP_add_cipher",
+                    "duration_ns": 16000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436763136",
+                    "start_time": "2025-10-15T04:40:31.436763136",
+                    "end_time": "2025-10-15T04:40:31.436779776"
+                },
+                {
+                    "function_name": "OBJ_NAME_add",
+                    "duration_ns": 11000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436767744",
+                    "start_time": "2025-10-15T04:40:31.436767744",
+                    "end_time": "2025-10-15T04:40:31.436779520"
+                },
+                {
+                    "function_name": "OPENSSL_LH_insert",
+                    "duration_ns": 10000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436768768",
+                    "start_time": "2025-10-15T04:40:31.436768768",
+                    "end_time": "2025-10-15T04:40:31.436779008"
+                },
+                {
+                    "function_name": "lh_OBJ_NAME_insert",
+                    "duration_ns": 10000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436768768",
+                    "start_time": "2025-10-15T04:40:31.436768768",
+                    "end_time": "2025-10-15T04:40:31.436779008"
+                },
+                {
+                    "function_name": "getrn",
+                    "duration_ns": 9000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436769024",
+                    "start_time": "2025-10-15T04:40:31.436769024",
+                    "end_time": "2025-10-15T04:40:31.436778752"
+                },
+                {
+                    "function_name": "lh_OBJ_NAME_cfn_thunk",
+                    "duration_ns": 7000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436770816",
+                    "start_time": "2025-10-15T04:40:31.436770816",
+                    "end_time": "2025-10-15T04:40:31.436778752"
+                },
+                {
+                    "function_name": "obj_name_cmp",
+                    "duration_ns": 7000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436770816",
+                    "start_time": "2025-10-15T04:40:31.436770816",
+                    "end_time": "2025-10-15T04:40:31.436778752"
+                },
+                {
+                    "function_name": "OPENSSL_strcasecmp",
+                    "duration_ns": 7000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436771072",
+                    "start_time": "2025-10-15T04:40:31.436771072",
+                    "end_time": "2025-10-15T04:40:31.436778496"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "apps_startup",
+                    "total_duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 14.098107377365778
+                },
+                {
+                    "function": "OPENSSL_init_ssl",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 13.943607570490538
+                },
+                {
+                    "function": "OPENSSL_init_crypto",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 13.943607570490538
+                },
+                {
+                    "function": "CRYPTO_THREAD_run_once",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 13.789107763615297
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 13.789107763615297
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers_ossl_",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 13.789107763615297
+                },
+                {
+                    "function": "openssl_add_all_ciphers_int",
+                    "total_duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "percentage_of_path": 13.673232908458866
+                },
+                {
+                    "function": "EVP_add_cipher",
+                    "total_duration_ns": 16000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.6179992275009656
+                },
+                {
+                    "function": "OBJ_NAME_add",
+                    "total_duration_ns": 11000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.4248744689069139
+                },
+                {
+                    "function": "OPENSSL_LH_insert",
+                    "total_duration_ns": 10000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.3862495171881035
+                }
+            ]
+        },
+        {
+            "rank": 6,
+            "thread_id": "399536",
+            "critical_duration_ns": 365000,
+            "critical_duration_formatted": "365.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 16,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "apps_startup",
+                    "duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436487168",
+                    "start_time": "2025-10-15T04:40:31.436487168",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_ssl",
+                    "duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491008",
+                    "start_time": "2025-10-15T04:40:31.436491008",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_crypto",
+                    "duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491776",
+                    "start_time": "2025-10-15T04:40:31.436491776",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495616",
+                    "start_time": "2025-10-15T04:40:31.436495616",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers_ossl_",
+                    "duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "openssl_add_all_ciphers_int",
+                    "duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436498688",
+                    "start_time": "2025-10-15T04:40:31.436498688",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "EVP_add_cipher",
+                    "duration_ns": 23000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436503040",
+                    "start_time": "2025-10-15T04:40:31.436503040",
+                    "end_time": "2025-10-15T04:40:31.436526336"
+                },
+                {
+                    "function_name": "OBJ_NAME_add",
+                    "duration_ns": 8000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436517376",
+                    "start_time": "2025-10-15T04:40:31.436517376",
+                    "end_time": "2025-10-15T04:40:31.436526080"
+                },
+                {
+                    "function_name": "getrn",
+                    "duration_ns": 6000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436518656",
+                    "start_time": "2025-10-15T04:40:31.436518656",
+                    "end_time": "2025-10-15T04:40:31.436525056"
+                },
+                {
+                    "function_name": "OPENSSL_LH_insert",
+                    "duration_ns": 6000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436518656",
+                    "start_time": "2025-10-15T04:40:31.436518656",
+                    "end_time": "2025-10-15T04:40:31.436525312"
+                },
+                {
+                    "function_name": "lh_OBJ_NAME_insert",
+                    "duration_ns": 6000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436518656",
+                    "start_time": "2025-10-15T04:40:31.436518656",
+                    "end_time": "2025-10-15T04:40:31.436525312"
+                },
+                {
+                    "function_name": "lh_OBJ_NAME_cfn_thunk",
+                    "duration_ns": 5000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436519424",
+                    "start_time": "2025-10-15T04:40:31.436519424",
+                    "end_time": "2025-10-15T04:40:31.436524800"
+                },
+                {
+                    "function_name": "obj_name_cmp",
+                    "duration_ns": 5000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436519680",
+                    "start_time": "2025-10-15T04:40:31.436519680",
+                    "end_time": "2025-10-15T04:40:31.436524800"
+                },
+                {
+                    "function_name": "OPENSSL_strcasecmp",
+                    "duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436520448",
+                    "start_time": "2025-10-15T04:40:31.436520448",
+                    "end_time": "2025-10-15T04:40:31.436524544"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "apps_startup",
+                    "total_duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 14.174757281553399
+                },
+                {
+                    "function": "OPENSSL_init_ssl",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.019417475728154
+                },
+                {
+                    "function": "OPENSSL_init_crypto",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 14.019417475728154
+                },
+                {
+                    "function": "CRYPTO_THREAD_run_once",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 13.864077669902914
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 13.864077669902914
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers_ossl_",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 13.864077669902914
+                },
+                {
+                    "function": "openssl_add_all_ciphers_int",
+                    "total_duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "percentage_of_path": 13.747572815533982
+                },
+                {
+                    "function": "EVP_add_cipher",
+                    "total_duration_ns": 23000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 0.8932038834951457
+                },
+                {
+                    "function": "OBJ_NAME_add",
+                    "total_duration_ns": 8000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.31067961165048547
+                },
+                {
+                    "function": "getrn",
+                    "total_duration_ns": 6000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.23300970873786409
+                }
+            ]
+        },
+        {
+            "rank": 7,
+            "thread_id": "399536",
+            "critical_duration_ns": 538000,
+            "critical_duration_formatted": "538.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 18,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "dup_bio_in",
+                    "duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435931904",
+                    "start_time": "2025-10-15T04:40:31.435931904",
+                    "end_time": "2025-10-15T04:40:31.436470016"
+                },
+                {
+                    "function_name": "BIO_new_fp",
+                    "duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435936256",
+                    "start_time": "2025-10-15T04:40:31.435936256",
+                    "end_time": "2025-10-15T04:40:31.436469760"
+                },
+                {
+                    "function_name": "BIO_new",
+                    "duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940352",
+                    "start_time": "2025-10-15T04:40:31.435940352",
+                    "end_time": "2025-10-15T04:40:31.436467456"
+                },
+                {
+                    "function_name": "BIO_new_ex",
+                    "duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940608",
+                    "start_time": "2025-10-15T04:40:31.435940608",
+                    "end_time": "2025-10-15T04:40:31.436466944"
+                },
+                {
+                    "function_name": "CRYPTO_new_ex_data",
+                    "duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240128",
+                    "start_time": "2025-10-15T04:40:31.436240128",
+                    "end_time": "2025-10-15T04:40:31.436466432"
+                },
+                {
+                    "function_name": "ossl_crypto_new_ex_data_ex",
+                    "duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240640",
+                    "start_time": "2025-10-15T04:40:31.436240640",
+                    "end_time": "2025-10-15T04:40:31.436466176"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_ex_data_global",
+                    "duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436241408",
+                    "start_time": "2025-10-15T04:40:31.436241408",
+                    "end_time": "2025-10-15T04:40:31.436463104"
+                },
+                {
+                    "function_name": "get_default_context",
+                    "duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_concrete",
+                    "duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "get_thread_default_context",
+                    "duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242688",
+                    "start_time": "2025-10-15T04:40:31.436242688",
+                    "end_time": "2025-10-15T04:40:31.436462592"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 215000,
+                    "self_time_ns": 14000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436246272",
+                    "start_time": "2025-10-15T04:40:31.436246272",
+                    "end_time": "2025-10-15T04:40:31.436462080"
+                },
+                {
+                    "function_name": "default_context_do_init_ossl_",
+                    "duration_ns": 201000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461312"
+                },
+                {
+                    "function_name": "default_context_do_init",
+                    "duration_ns": 200000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461056"
+                },
+                {
+                    "function_name": "context_init",
+                    "duration_ns": 199000,
+                    "self_time_ns": 55000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436261120",
+                    "start_time": "2025-10-15T04:40:31.436261120",
+                    "end_time": "2025-10-15T04:40:31.436460800"
+                },
+                {
+                    "function_name": "ossl_stored_namemap_new",
+                    "duration_ns": 18000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436335360",
+                    "start_time": "2025-10-15T04:40:31.436335360",
+                    "end_time": "2025-10-15T04:40:31.436353792"
+                },
+                {
+                    "function_name": "ossl_namemap_new",
+                    "duration_ns": 17000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436335872",
+                    "start_time": "2025-10-15T04:40:31.436335872",
+                    "end_time": "2025-10-15T04:40:31.436353792"
+                },
+                {
+                    "function_name": "ossl_ht_new",
+                    "duration_ns": 12000,
+                    "self_time_ns": 12000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436339712",
+                    "start_time": "2025-10-15T04:40:31.436339712",
+                    "end_time": "2025-10-15T04:40:31.436352"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "dup_bio_in",
+                    "total_duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 12.462358119064165
+                },
+                {
+                    "function": "BIO_new_fp",
+                    "total_duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.346536946953904
+                },
+                {
+                    "function": "BIO_new",
+                    "total_duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 12.207551540421589
+                },
+                {
+                    "function": "BIO_new_ex",
+                    "total_duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.184387305999536
+                },
+                {
+                    "function": "CRYPTO_new_ex_data",
+                    "total_duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.2351169793838315
+                },
+                {
+                    "function": "ossl_crypto_new_ex_data_ex",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.2119527449617795
+                },
+                {
+                    "function": "ossl_lib_ctx_get_ex_data_global",
+                    "total_duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.11929580727357
+                },
+                {
+                    "function": "get_default_context",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.096131572851517
+                },
+                {
+                    "function": "ossl_lib_ctx_get_concrete",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.096131572851517
+                },
+                {
+                    "function": "get_thread_default_context",
+                    "total_duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.072967338429465
+                }
+            ]
+        },
+        {
+            "rank": 8,
+            "thread_id": "399536",
+            "critical_duration_ns": 538000,
+            "critical_duration_formatted": "538.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 23,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "dup_bio_in",
+                    "duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435931904",
+                    "start_time": "2025-10-15T04:40:31.435931904",
+                    "end_time": "2025-10-15T04:40:31.436470016"
+                },
+                {
+                    "function_name": "BIO_new_fp",
+                    "duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435936256",
+                    "start_time": "2025-10-15T04:40:31.435936256",
+                    "end_time": "2025-10-15T04:40:31.436469760"
+                },
+                {
+                    "function_name": "BIO_new",
+                    "duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940352",
+                    "start_time": "2025-10-15T04:40:31.435940352",
+                    "end_time": "2025-10-15T04:40:31.436467456"
+                },
+                {
+                    "function_name": "BIO_new_ex",
+                    "duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940608",
+                    "start_time": "2025-10-15T04:40:31.435940608",
+                    "end_time": "2025-10-15T04:40:31.436466944"
+                },
+                {
+                    "function_name": "CRYPTO_new_ex_data",
+                    "duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240128",
+                    "start_time": "2025-10-15T04:40:31.436240128",
+                    "end_time": "2025-10-15T04:40:31.436466432"
+                },
+                {
+                    "function_name": "ossl_crypto_new_ex_data_ex",
+                    "duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240640",
+                    "start_time": "2025-10-15T04:40:31.436240640",
+                    "end_time": "2025-10-15T04:40:31.436466176"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_ex_data_global",
+                    "duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436241408",
+                    "start_time": "2025-10-15T04:40:31.436241408",
+                    "end_time": "2025-10-15T04:40:31.436463104"
+                },
+                {
+                    "function_name": "get_default_context",
+                    "duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_concrete",
+                    "duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "get_thread_default_context",
+                    "duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242688",
+                    "start_time": "2025-10-15T04:40:31.436242688",
+                    "end_time": "2025-10-15T04:40:31.436462592"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 215000,
+                    "self_time_ns": 14000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436246272",
+                    "start_time": "2025-10-15T04:40:31.436246272",
+                    "end_time": "2025-10-15T04:40:31.436462080"
+                },
+                {
+                    "function_name": "default_context_do_init_ossl_",
+                    "duration_ns": 201000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461312"
+                },
+                {
+                    "function_name": "default_context_do_init",
+                    "duration_ns": 200000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461056"
+                },
+                {
+                    "function_name": "context_init",
+                    "duration_ns": 199000,
+                    "self_time_ns": 55000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436261120",
+                    "start_time": "2025-10-15T04:40:31.436261120",
+                    "end_time": "2025-10-15T04:40:31.436460800"
+                },
+                {
+                    "function_name": "ossl_property_parse_init",
+                    "duration_ns": 71000,
+                    "self_time_ns": 20000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436379904",
+                    "start_time": "2025-10-15T04:40:31.436379904",
+                    "end_time": "2025-10-15T04:40:31.436451584"
+                },
+                {
+                    "function_name": "ossl_property_name",
+                    "duration_ns": 10000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436417280",
+                    "start_time": "2025-10-15T04:40:31.436417280",
+                    "end_time": "2025-10-15T04:40:31.436427776"
+                },
+                {
+                    "function_name": "ossl_property_string",
+                    "duration_ns": 10000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436417280",
+                    "start_time": "2025-10-15T04:40:31.436417280",
+                    "end_time": "2025-10-15T04:40:31.436427776"
+                },
+                {
+                    "function_name": "OPENSSL_sk_push",
+                    "duration_ns": 3000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436422400",
+                    "start_time": "2025-10-15T04:40:31.436422400",
+                    "end_time": "2025-10-15T04:40:31.436425728"
+                },
+                {
+                    "function_name": "OPENSSL_sk_insert",
+                    "duration_ns": 3000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436422400",
+                    "start_time": "2025-10-15T04:40:31.436422400",
+                    "end_time": "2025-10-15T04:40:31.436425728"
+                },
+                {
+                    "function_name": "sk_reserve",
+                    "duration_ns": 3000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436422400",
+                    "start_time": "2025-10-15T04:40:31.436422400",
+                    "end_time": "2025-10-15T04:40:31.436425472"
+                },
+                {
+                    "function_name": "compute_growth",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436422656",
+                    "start_time": "2025-10-15T04:40:31.436422656",
+                    "end_time": "2025-10-15T04:40:31.436424448"
+                },
+                {
+                    "function_name": "safe_muldiv_int",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436422912",
+                    "start_time": "2025-10-15T04:40:31.436422912",
+                    "end_time": "2025-10-15T04:40:31.436424192"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "dup_bio_in",
+                    "total_duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 12.305580969807869
+                },
+                {
+                    "function": "BIO_new_fp",
+                    "total_duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.191216834400732
+                },
+                {
+                    "function": "BIO_new",
+                    "total_duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 12.05397987191217
+                },
+                {
+                    "function": "BIO_new_ex",
+                    "total_duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.03110704483074
+                },
+                {
+                    "function": "CRYPTO_new_ex_data",
+                    "total_duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.169258920402562
+                },
+                {
+                    "function": "ossl_crypto_new_ex_data_ex",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.1463860933211345
+                },
+                {
+                    "function": "ossl_lib_ctx_get_ex_data_global",
+                    "total_duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.054894784995426
+                },
+                {
+                    "function": "get_default_context",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.032021957913998
+                },
+                {
+                    "function": "ossl_lib_ctx_get_concrete",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.032021957913998
+                },
+                {
+                    "function": "get_thread_default_context",
+                    "total_duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.00914913083257
+                }
+            ]
+        },
+        {
+            "rank": 9,
+            "thread_id": "399536",
+            "critical_duration_ns": 538000,
+            "critical_duration_formatted": "538.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 20,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "dup_bio_in",
+                    "duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435931904",
+                    "start_time": "2025-10-15T04:40:31.435931904",
+                    "end_time": "2025-10-15T04:40:31.436470016"
+                },
+                {
+                    "function_name": "BIO_new_fp",
+                    "duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435936256",
+                    "start_time": "2025-10-15T04:40:31.435936256",
+                    "end_time": "2025-10-15T04:40:31.436469760"
+                },
+                {
+                    "function_name": "BIO_new",
+                    "duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940352",
+                    "start_time": "2025-10-15T04:40:31.435940352",
+                    "end_time": "2025-10-15T04:40:31.436467456"
+                },
+                {
+                    "function_name": "BIO_new_ex",
+                    "duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435940608",
+                    "start_time": "2025-10-15T04:40:31.435940608",
+                    "end_time": "2025-10-15T04:40:31.436466944"
+                },
+                {
+                    "function_name": "CRYPTO_new_ex_data",
+                    "duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240128",
+                    "start_time": "2025-10-15T04:40:31.436240128",
+                    "end_time": "2025-10-15T04:40:31.436466432"
+                },
+                {
+                    "function_name": "ossl_crypto_new_ex_data_ex",
+                    "duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436240640",
+                    "start_time": "2025-10-15T04:40:31.436240640",
+                    "end_time": "2025-10-15T04:40:31.436466176"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_ex_data_global",
+                    "duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436241408",
+                    "start_time": "2025-10-15T04:40:31.436241408",
+                    "end_time": "2025-10-15T04:40:31.436463104"
+                },
+                {
+                    "function_name": "get_default_context",
+                    "duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "ossl_lib_ctx_get_concrete",
+                    "duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242432",
+                    "start_time": "2025-10-15T04:40:31.436242432",
+                    "end_time": "2025-10-15T04:40:31.436462848"
+                },
+                {
+                    "function_name": "get_thread_default_context",
+                    "duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436242688",
+                    "start_time": "2025-10-15T04:40:31.436242688",
+                    "end_time": "2025-10-15T04:40:31.436462592"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 215000,
+                    "self_time_ns": 14000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436246272",
+                    "start_time": "2025-10-15T04:40:31.436246272",
+                    "end_time": "2025-10-15T04:40:31.436462080"
+                },
+                {
+                    "function_name": "default_context_do_init_ossl_",
+                    "duration_ns": 201000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461312"
+                },
+                {
+                    "function_name": "default_context_do_init",
+                    "duration_ns": 200000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436260096",
+                    "start_time": "2025-10-15T04:40:31.436260096",
+                    "end_time": "2025-10-15T04:40:31.436461056"
+                },
+                {
+                    "function_name": "context_init",
+                    "duration_ns": 199000,
+                    "self_time_ns": 55000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436261120",
+                    "start_time": "2025-10-15T04:40:31.436261120",
+                    "end_time": "2025-10-15T04:40:31.436460800"
+                },
+                {
+                    "function_name": "ossl_property_parse_init",
+                    "duration_ns": 71000,
+                    "self_time_ns": 20000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436379904",
+                    "start_time": "2025-10-15T04:40:31.436379904",
+                    "end_time": "2025-10-15T04:40:31.436451584"
+                },
+                {
+                    "function_name": "ossl_property_name",
+                    "duration_ns": 14000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436380160",
+                    "start_time": "2025-10-15T04:40:31.436380160",
+                    "end_time": "2025-10-15T04:40:31.436394752"
+                },
+                {
+                    "function_name": "ossl_property_string",
+                    "duration_ns": 14000,
+                    "self_time_ns": 11000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436380416",
+                    "start_time": "2025-10-15T04:40:31.436380416",
+                    "end_time": "2025-10-15T04:40:31.436394752"
+                },
+                {
+                    "function_name": "lh_PROPERTY_STRING_insert",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436392192",
+                    "start_time": "2025-10-15T04:40:31.436392192",
+                    "end_time": "2025-10-15T04:40:31.436393728"
+                },
+                {
+                    "function_name": "OPENSSL_LH_insert",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436392192",
+                    "start_time": "2025-10-15T04:40:31.436392192",
+                    "end_time": "2025-10-15T04:40:31.436393728"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "dup_bio_in",
+                    "total_duration_ns": 538000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 12.30839624799817
+                },
+                {
+                    "function": "BIO_new_fp",
+                    "total_duration_ns": 533000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.194005948295585
+                },
+                {
+                    "function": "BIO_new",
+                    "total_duration_ns": 527000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 12.056737588652481
+                },
+                {
+                    "function": "BIO_new_ex",
+                    "total_duration_ns": 526000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 12.033859528711965
+                },
+                {
+                    "function": "CRYPTO_new_ex_data",
+                    "total_duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.170441546556852
+                },
+                {
+                    "function": "ossl_crypto_new_ex_data_ex",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.147563486616335
+                },
+                {
+                    "function": "ossl_lib_ctx_get_ex_data_global",
+                    "total_duration_ns": 221000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.056051246854267
+                },
+                {
+                    "function": "get_default_context",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.03317318691375
+                },
+                {
+                    "function": "ossl_lib_ctx_get_concrete",
+                    "total_duration_ns": 220000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.03317318691375
+                },
+                {
+                    "function": "get_thread_default_context",
+                    "total_duration_ns": 219000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 5.010295126973233
+                }
+            ]
+        },
+        {
+            "rank": 10,
+            "thread_id": "399536",
+            "critical_duration_ns": 365000,
+            "critical_duration_formatted": "365.0\u03bcs",
+            "total_duration_ns": 925000,
+            "path_length": 10,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 925000,
+                    "self_time_ns": 7000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231435927808",
+                    "start_time": "2025-10-15T04:40:31.435927808",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "apps_startup",
+                    "duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436487168",
+                    "start_time": "2025-10-15T04:40:31.436487168",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_ssl",
+                    "duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491008",
+                    "start_time": "2025-10-15T04:40:31.436491008",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "OPENSSL_init_crypto",
+                    "duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436491776",
+                    "start_time": "2025-10-15T04:40:31.436491776",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "CRYPTO_THREAD_run_once",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495616",
+                    "start_time": "2025-10-15T04:40:31.436495616",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers",
+                    "duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "ossl_init_add_all_ciphers_ossl_",
+                    "duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436495872",
+                    "start_time": "2025-10-15T04:40:31.436495872",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "openssl_add_all_ciphers_int",
+                    "duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436498688",
+                    "start_time": "2025-10-15T04:40:31.436498688",
+                    "end_time": "2025-10-15T04:40:31.436852993"
+                },
+                {
+                    "function_name": "EVP_add_cipher",
+                    "duration_ns": 16000,
+                    "self_time_ns": 2000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436763136",
+                    "start_time": "2025-10-15T04:40:31.436763136",
+                    "end_time": "2025-10-15T04:40:31.436779776"
+                },
+                {
+                    "function_name": "OBJ_NAME_add",
+                    "duration_ns": 3000,
+                    "self_time_ns": 3000,
+                    "thread_id": "399536",
+                    "entry_id": "0_1760503231436764160",
+                    "start_time": "2025-10-15T04:40:31.436764160",
+                    "end_time": "2025-10-15T04:40:31.436767232"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "apps_startup",
+                    "total_duration_ns": 365000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 14.42117740023706
+                },
+                {
+                    "function": "OPENSSL_init_ssl",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.26313709996049
+                },
+                {
+                    "function": "OPENSSL_init_crypto",
+                    "total_duration_ns": 361000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 14.26313709996049
+                },
+                {
+                    "function": "CRYPTO_THREAD_run_once",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.105096799683919
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 14.105096799683919
+                },
+                {
+                    "function": "ossl_init_add_all_ciphers_ossl_",
+                    "total_duration_ns": 357000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 14.105096799683919
+                },
+                {
+                    "function": "openssl_add_all_ciphers_int",
+                    "total_duration_ns": 354000,
+                    "self_time_ns": 57000,
+                    "percentage_of_path": 13.986566574476491
+                },
+                {
+                    "function": "EVP_add_cipher",
+                    "total_duration_ns": 16000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.632161201106282
+                },
+                {
+                    "function": "OBJ_NAME_add",
+                    "total_duration_ns": 3000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 0.1185302252074279
+                }
+            ]
+        }
+    ],
+    "executed_functions": [
+        "ossl_ht_new",
+        "ossl_indicator_set_callback_new",
+        "ossl_bio_core_globals_new",
+        "lh_PROPERTY_STRING_hfn_thunk",
+        "OPENSSL_init_ssl",
+        "OPENSSL_LH_strhash",
+        "EVP_des_ede3_ofb",
+        "EVP_add_cipher",
+        "CRYPTO_THREAD_write_lock",
+        "CRYPTO_malloc",
+        "OPENSSL_LH_insert",
+        "ossl_init_base",
+        "sk_EX_CALLBACK_num",
+        "openssl_add_all_ciphers_int",
+        "obj_name_hash",
+        "ossl_property_string_data_new",
+        "dup_bio_err",
+        "ossl_property_parse_init",
+        "sk_reserve",
+        "dup_bio_out",
+        "ossl_namemap_new",
+        "ossl_load_builtin_compressions",
+        "lh_OBJ_NAME_hfn_thunk",
+        "CRYPTO_new_ex_data",
+        "safe_muldiv_int",
+        "context_init",
+        "OPENSSL_init_crypto",
+        "CRYPTO_THREAD_read_lock",
+        "OPENSSL_strcasecmp",
+        "ossl_tolower",
+        "OBJ_NAME_add",
+        "main",
+        "lh_OBJ_NAME_insert",
+        "ossl_method_store_new",
+        "OPENSSL_LH_new",
+        "default_context_do_init",
+        "property_hash",
+        "lh_PROPERTY_STRING_new",
+        "lh_OBJ_NAME_cfn_thunk",
+        "compute_growth",
+        "BIO_new_fp",
+        "ossl_init_add_all_ciphers_ossl_",
+        "getrn",
+        "ossl_property_string",
+        "ossl_rand_ctx_new",
+        "ossl_provider_store_new",
+        "obj_name_cmp",
+        "dup_bio_in",
+        "lh_OBJ_NAME_error",
+        "sk_OSSL_PROVIDER_new",
+        "CRYPTO_THREAD_run_once",
+        "ossl_property_name",
+        "get_default_context",
+        "CRYPTO_THREAD_init_local",
+        "ossl_sa_ALGORITHM_new",
+        "ossl_lib_ctx_get_concrete",
+        "lh_PROPERTY_STRING_retrieve",
+        "BIO_new_ex",
+        "get_thread_default_context",
+        "ossl_lib_ctx_get_ex_data_global",
+        "CRYPTO_zalloc",
+        "ossl_crypto_new_ex_data_ex",
+        "ossl_stored_namemap_new",
+        "OBJ_nid2sn",
+        "apps_startup",
+        "BIO_new"
+    ]
+}

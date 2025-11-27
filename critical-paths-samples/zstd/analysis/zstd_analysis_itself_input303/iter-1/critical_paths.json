@@ -1,0 +1,1637 @@
+{
+    "summary": {
+        "num_paths_requested": 10,
+        "num_paths_found": 10,
+        "num_threads": 3,
+        "total_function_calls": 1025
+    },
+    "top_k_critical_paths": [
+        {
+            "rank": 1,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 13,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960576",
+                    "start_time": "2025-10-21T02:01:10.683960576",
+                    "end_time": "2025-10-21T02:01:10.691584256"
+                },
+                {
+                    "function_name": "ZSTD_compressStream_generic",
+                    "duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684265728",
+                    "start_time": "2025-10-21T02:01:10.684265728",
+                    "end_time": "2025-10-21T02:01:10.691583744"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_public",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309504",
+                    "start_time": "2025-10-21T02:01:10.684309504",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_internal",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309760",
+                    "start_time": "2025-10-21T02:01:10.684309760",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compress_frameChunk",
+                    "duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684311552",
+                    "start_time": "2025-10-21T02:01:10.684311552",
+                    "end_time": "2025-10-21T02:01:10.691582720"
+                },
+                {
+                    "function_name": "ZSTD_XXH64_update",
+                    "duration_ns": 4308000,
+                    "self_time_ns": 4286000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684311808",
+                    "start_time": "2025-10-21T02:01:10.684311808",
+                    "end_time": "2025-10-21T02:01:10.688620032"
+                },
+                {
+                    "function_name": "XXH_readLE64",
+                    "duration_ns": 8000,
+                    "self_time_ns": 8000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684729856",
+                    "start_time": "2025-10-21T02:01:10.684729856",
+                    "end_time": "2025-10-21T02:01:10.684738816"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 13.99508021721305
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 13.704225134211057
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 13.591286724321982
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 13.475254111422249
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 13.461330197874283
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.8967773875643985
+                },
+                {
+                    "function": "ZSTD_compressStream_generic",
+                    "total_duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.660844408001609
+                },
+                {
+                    "function": "ZSTD_compressContinue_public",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.626034624131689
+                },
+                {
+                    "function": "ZSTD_compressContinue_internal",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.626034624131689
+                },
+                {
+                    "function": "ZSTD_compress_frameChunk",
+                    "total_duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 5.62448752262636
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "thread_id": "80742",
+            "critical_duration_ns": 226000,
+            "critical_duration_formatted": "226.0\u03bcs",
+            "total_duration_ns": 18356000,
+            "path_length": 4,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "default_nbThreads",
+                    "duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683276800",
+                    "start_time": "2025-10-21T02:01:10.683276800",
+                    "end_time": "2025-10-21T02:01:10.683503616"
+                },
+                {
+                    "function_name": "UTIL_countLogicalCores",
+                    "duration_ns": 225000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683276800",
+                    "start_time": "2025-10-21T02:01:10.683276800",
+                    "end_time": "2025-10-21T02:01:10.683502336"
+                },
+                {
+                    "function_name": "UTIL_countCores",
+                    "duration_ns": 225000,
+                    "self_time_ns": 225000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683276800",
+                    "start_time": "2025-10-21T02:01:10.683276800",
+                    "end_time": "2025-10-21T02:01:10.683502080"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "default_nbThreads",
+                    "total_duration_ns": 226000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 33.43195266272189
+                },
+                {
+                    "function": "UTIL_countLogicalCores",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 33.28402366863905
+                },
+                {
+                    "function": "UTIL_countCores",
+                    "total_duration_ns": 225000,
+                    "self_time_ns": 225000,
+                    "percentage_of_path": 33.28402366863905
+                }
+            ]
+        },
+        {
+            "rank": 3,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_createCResources",
+                    "duration_ns": 191000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683526656",
+                    "start_time": "2025-10-21T02:01:10.683526656",
+                    "end_time": "2025-10-21T02:01:10.683718144"
+                },
+                {
+                    "function_name": "AIO_WritePool_create",
+                    "duration_ns": 91000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683532288",
+                    "start_time": "2025-10-21T02:01:10.683532288",
+                    "end_time": "2025-10-21T02:01:10.683623936"
+                },
+                {
+                    "function_name": "AIO_IOPool_init",
+                    "duration_ns": 90000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683533056",
+                    "start_time": "2025-10-21T02:01:10.683533056",
+                    "end_time": "2025-10-21T02:01:10.683623936"
+                },
+                {
+                    "function_name": "AIO_IOPool_createThreadPool",
+                    "duration_ns": 70000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683533056",
+                    "start_time": "2025-10-21T02:01:10.683533056",
+                    "end_time": "2025-10-21T02:01:10.683603456"
+                },
+                {
+                    "function_name": "POOL_create",
+                    "duration_ns": 69000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683533312",
+                    "start_time": "2025-10-21T02:01:10.683533312",
+                    "end_time": "2025-10-21T02:01:10.683603200"
+                },
+                {
+                    "function_name": "POOL_create_advanced",
+                    "duration_ns": 69000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683533568",
+                    "start_time": "2025-10-21T02:01:10.683533568",
+                    "end_time": "2025-10-21T02:01:10.683602944"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 96.89374464438731
+                },
+                {
+                    "function": "FIO_createCResources",
+                    "total_duration_ns": 191000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 1.0229220222793487
+                },
+                {
+                    "function": "AIO_WritePool_create",
+                    "total_duration_ns": 91000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.48736075407026563
+                },
+                {
+                    "function": "AIO_IOPool_init",
+                    "total_duration_ns": 90000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 0.4820051413881748
+                },
+                {
+                    "function": "AIO_IOPool_createThreadPool",
+                    "total_duration_ns": 70000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.37489288774635815
+                },
+                {
+                    "function": "POOL_create",
+                    "total_duration_ns": 69000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.36953727506426737
+                },
+                {
+                    "function": "POOL_create_advanced",
+                    "total_duration_ns": 69000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 0.36953727506426737
+                }
+            ]
+        },
+        {
+            "rank": 4,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "AIO_ReadPool_setFile",
+                    "duration_ns": 105000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683750144",
+                    "start_time": "2025-10-21T02:01:10.683750144",
+                    "end_time": "2025-10-21T02:01:10.683855360"
+                },
+                {
+                    "function_name": "AIO_ReadPool_startReading",
+                    "duration_ns": 104000,
+                    "self_time_ns": 11000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683750912",
+                    "start_time": "2025-10-21T02:01:10.683750912",
+                    "end_time": "2025-10-21T02:01:10.683855360"
+                },
+                {
+                    "function_name": "AIO_ReadPool_enqueueRead",
+                    "duration_ns": 43000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683750912",
+                    "start_time": "2025-10-21T02:01:10.683750912",
+                    "end_time": "2025-10-21T02:01:10.683794432"
+                },
+                {
+                    "function_name": "AIO_IOPool_enqueueJob",
+                    "duration_ns": 42000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683751680",
+                    "start_time": "2025-10-21T02:01:10.683751680",
+                    "end_time": "2025-10-21T02:01:10.683794432"
+                },
+                {
+                    "function_name": "AIO_ReadPool_executeReadJob",
+                    "duration_ns": 42000,
+                    "self_time_ns": 42000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683751936",
+                    "start_time": "2025-10-21T02:01:10.683751936",
+                    "end_time": "2025-10-21T02:01:10.683794432"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 50.055334218680834
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 49.01505090748119
+                },
+                {
+                    "function": "AIO_ReadPool_setFile",
+                    "total_duration_ns": 105000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.2905046480743692
+                },
+                {
+                    "function": "AIO_ReadPool_startReading",
+                    "total_duration_ns": 104000,
+                    "self_time_ns": 11000,
+                    "percentage_of_path": 0.2877379371403276
+                },
+                {
+                    "function": "AIO_ReadPool_enqueueRead",
+                    "total_duration_ns": 43000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.1189685701637893
+                },
+                {
+                    "function": "AIO_IOPool_enqueueJob",
+                    "total_duration_ns": 42000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.11620185922974768
+                },
+                {
+                    "function": "AIO_ReadPool_executeReadJob",
+                    "total_duration_ns": 42000,
+                    "self_time_ns": 42000,
+                    "percentage_of_path": 0.11620185922974768
+                }
+            ]
+        },
+        {
+            "rank": 5,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 6,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "UTIL_setFDStat",
+                    "duration_ns": 33000,
+                    "self_time_ns": 17000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070701366784",
+                    "start_time": "2025-10-21T02:01:10.701366784",
+                    "end_time": "2025-10-21T02:01:10.701399808"
+                },
+                {
+                    "function_name": "UTIL_fstat",
+                    "duration_ns": 10000,
+                    "self_time_ns": 10000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070701367040",
+                    "start_time": "2025-10-21T02:01:10.701367040",
+                    "end_time": "2025-10-21T02:01:10.701377792"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 33.866831395893
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 33.16298833791954
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 32.889687576046875
+                },
+                {
+                    "function": "UTIL_setFDStat",
+                    "total_duration_ns": 33000,
+                    "self_time_ns": 17000,
+                    "percentage_of_path": 0.06177345987532992
+                },
+                {
+                    "function": "UTIL_fstat",
+                    "total_duration_ns": 10000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 0.018719230265251494
+                }
+            ]
+        },
+        {
+            "rank": 6,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 14,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7442000,
+                    "self_time_ns": 7395000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691593472",
+                    "start_time": "2025-10-21T02:01:10.691593472",
+                    "end_time": "2025-10-21T02:01:10.699035648"
+                },
+                {
+                    "function_name": "ZSTD_limitCopy",
+                    "duration_ns": 47000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691593984",
+                    "start_time": "2025-10-21T02:01:10.691593984",
+                    "end_time": "2025-10-21T02:01:10.691641344"
+                },
+                {
+                    "function_name": "ZSTD_compressStream_generic",
+                    "duration_ns": 7441000,
+                    "self_time_ns": 48000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691593984",
+                    "start_time": "2025-10-21T02:01:10.691593984",
+                    "end_time": "2025-10-21T02:01:10.699035392"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_public",
+                    "duration_ns": 7393000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691641856",
+                    "start_time": "2025-10-21T02:01:10.691641856",
+                    "end_time": "2025-10-21T02:01:10.699034880"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_internal",
+                    "duration_ns": 7392000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691642112",
+                    "start_time": "2025-10-21T02:01:10.691642112",
+                    "end_time": "2025-10-21T02:01:10.699034880"
+                },
+                {
+                    "function_name": "ZSTD_compress_frameChunk",
+                    "duration_ns": 7392000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691642368",
+                    "start_time": "2025-10-21T02:01:10.691642368",
+                    "end_time": "2025-10-21T02:01:10.699034624"
+                },
+                {
+                    "function_name": "ZSTD_XXH64_update",
+                    "duration_ns": 4166000,
+                    "self_time_ns": 4149000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691642624",
+                    "start_time": "2025-10-21T02:01:10.691642624",
+                    "end_time": "2025-10-21T02:01:10.695809024"
+                },
+                {
+                    "function_name": "XXH_readLE64",
+                    "duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070692225024",
+                    "start_time": "2025-10-21T02:01:10.692225024",
+                    "end_time": "2025-10-21T02:01:10.692229120"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 13.973138086301043
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 13.682739019285279
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 13.569977679433412
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 13.454126987804784
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 13.440224904809348
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7442000,
+                    "self_time_ns": 7395000,
+                    "percentage_of_path": 5.747738980668381
+                },
+                {
+                    "function": "ZSTD_compressStream_generic",
+                    "total_duration_ns": 7441000,
+                    "self_time_ns": 48000,
+                    "percentage_of_path": 5.746966642724191
+                },
+                {
+                    "function": "ZSTD_compressContinue_public",
+                    "total_duration_ns": 7393000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.709894421403029
+                },
+                {
+                    "function": "ZSTD_compressContinue_internal",
+                    "total_duration_ns": 7392000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.709122083458838
+                },
+                {
+                    "function": "ZSTD_compress_frameChunk",
+                    "total_duration_ns": 7392000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.709122083458838
+                }
+            ]
+        },
+        {
+            "rank": 7,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 12,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960576",
+                    "start_time": "2025-10-21T02:01:10.683960576",
+                    "end_time": "2025-10-21T02:01:10.691584256"
+                },
+                {
+                    "function_name": "ZSTD_CCtx_init_compressStream2",
+                    "duration_ns": 304000,
+                    "self_time_ns": 3000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960832",
+                    "start_time": "2025-10-21T02:01:10.683960832",
+                    "end_time": "2025-10-21T02:01:10.684264960"
+                },
+                {
+                    "function_name": "ZSTD_compressBegin_internal",
+                    "duration_ns": 301000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683963648",
+                    "start_time": "2025-10-21T02:01:10.683963648",
+                    "end_time": "2025-10-21T02:01:10.684264704"
+                },
+                {
+                    "function_name": "ZSTD_resetCCtx_internal",
+                    "duration_ns": 299000,
+                    "self_time_ns": 25000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683963904",
+                    "start_time": "2025-10-21T02:01:10.683963904",
+                    "end_time": "2025-10-21T02:01:10.684263680"
+                },
+                {
+                    "function_name": "ZSTD_reset_matchState",
+                    "duration_ns": 265000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683991040",
+                    "start_time": "2025-10-21T02:01:10.683991040",
+                    "end_time": "2025-10-21T02:01:10.684256768"
+                },
+                {
+                    "function_name": "ZSTD_cwksp_clean_tables",
+                    "duration_ns": 261000,
+                    "self_time_ns": 261000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683994880",
+                    "start_time": "2025-10-21T02:01:10.683994880",
+                    "end_time": "2025-10-21T02:01:10.684256256"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 18.603025099482792
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 18.216404635332587
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 18.066280731699795
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 17.91204384440583
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 17.893535417930554
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 7.838318612279313
+                },
+                {
+                    "function": "ZSTD_CCtx_init_compressStream2",
+                    "total_duration_ns": 304000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 0.31258675824910287
+                },
+                {
+                    "function": "ZSTD_compressBegin_internal",
+                    "total_duration_ns": 301000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.30950202050322356
+                },
+                {
+                    "function": "ZSTD_resetCCtx_internal",
+                    "total_duration_ns": 299000,
+                    "self_time_ns": 25000,
+                    "percentage_of_path": 0.30744552867263736
+                },
+                {
+                    "function": "ZSTD_reset_matchState",
+                    "total_duration_ns": 265000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 0.27248516755267194
+                }
+            ]
+        },
+        {
+            "rank": 8,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 9,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960576",
+                    "start_time": "2025-10-21T02:01:10.683960576",
+                    "end_time": "2025-10-21T02:01:10.691584256"
+                },
+                {
+                    "function_name": "ZSTD_compressStream_generic",
+                    "duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684265728",
+                    "start_time": "2025-10-21T02:01:10.684265728",
+                    "end_time": "2025-10-21T02:01:10.691583744"
+                },
+                {
+                    "function_name": "ZSTD_limitCopy",
+                    "duration_ns": 43000,
+                    "self_time_ns": 43000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684265984",
+                    "start_time": "2025-10-21T02:01:10.684265984",
+                    "end_time": "2025-10-21T02:01:10.684308992"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 17.533726159094435
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 17.16932857807412
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 17.027833772677933
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 16.882462397270896
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 16.86501783222205
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 7.387773298185765
+                },
+                {
+                    "function": "ZSTD_compressStream_generic",
+                    "total_duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 7.092184834858117
+                },
+                {
+                    "function": "ZSTD_limitCopy",
+                    "total_duration_ns": 43000,
+                    "self_time_ns": 43000,
+                    "percentage_of_path": 0.041673127616684756
+                }
+            ]
+        },
+        {
+            "rank": 9,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 17,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960576",
+                    "start_time": "2025-10-21T02:01:10.683960576",
+                    "end_time": "2025-10-21T02:01:10.691584256"
+                },
+                {
+                    "function_name": "ZSTD_compressStream_generic",
+                    "duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684265728",
+                    "start_time": "2025-10-21T02:01:10.684265728",
+                    "end_time": "2025-10-21T02:01:10.691583744"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_public",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309504",
+                    "start_time": "2025-10-21T02:01:10.684309504",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_internal",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309760",
+                    "start_time": "2025-10-21T02:01:10.684309760",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compress_frameChunk",
+                    "duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684311552",
+                    "start_time": "2025-10-21T02:01:10.684311552",
+                    "end_time": "2025-10-21T02:01:10.691582720"
+                },
+                {
+                    "function_name": "ZSTD_compressBlock_internal",
+                    "duration_ns": 2960000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070688621056",
+                    "start_time": "2025-10-21T02:01:10.688621056",
+                    "end_time": "2025-10-21T02:01:10.691581696"
+                },
+                {
+                    "function_name": "ZSTD_buildSeqStore",
+                    "duration_ns": 2923000,
+                    "self_time_ns": 7000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070688621312",
+                    "start_time": "2025-10-21T02:01:10.688621312",
+                    "end_time": "2025-10-21T02:01:10.691544320"
+                },
+                {
+                    "function_name": "ZSTD_compressBlock_doubleFast_noDict_5",
+                    "duration_ns": 2916000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070688627200",
+                    "start_time": "2025-10-21T02:01:10.688627200",
+                    "end_time": "2025-10-21T02:01:10.691543552"
+                },
+                {
+                    "function_name": "ZSTD_compressBlock_doubleFast",
+                    "duration_ns": 2916000,
+                    "self_time_ns": 41000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070688627200",
+                    "start_time": "2025-10-21T02:01:10.688627200",
+                    "end_time": "2025-10-21T02:01:10.691543808"
+                },
+                {
+                    "function_name": "ZSTD_count",
+                    "duration_ns": 2875000,
+                    "self_time_ns": 2868000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070688663552",
+                    "start_time": "2025-10-21T02:01:10.688663552",
+                    "end_time": "2025-10-21T02:01:10.691539456"
+                },
+                {
+                    "function_name": "MEM_readST",
+                    "duration_ns": 7000,
+                    "self_time_ns": 7000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070691034112",
+                    "start_time": "2025-10-21T02:01:10.691034112",
+                    "end_time": "2025-10-21T02:01:10.691041280"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 12.964064347389916
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 12.694636523234568
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 12.590018272365732
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 12.48253376804844
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 12.469635627530366
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.462362509404894
+                },
+                {
+                    "function": "ZSTD_compressStream_generic",
+                    "total_duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.24381068395973
+                },
+                {
+                    "function": "ZSTD_compressContinue_public",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.211565332664541
+                },
+                {
+                    "function": "ZSTD_compressContinue_internal",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.211565332664541
+                },
+                {
+                    "function": "ZSTD_compress_frameChunk",
+                    "total_duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 5.210132205940311
+                }
+            ]
+        },
+        {
+            "rank": 10,
+            "thread_id": "80742",
+            "critical_duration_ns": 18092000,
+            "critical_duration_formatted": "18.1ms",
+            "total_duration_ns": 18356000,
+            "path_length": 13,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 18356000,
+                    "self_time_ns": 35000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683254528",
+                    "start_time": "2025-10-21T02:01:10.683254528",
+                    "end_time": "2025-10-21T02:01:10.701611264"
+                },
+                {
+                    "function_name": "FIO_compressFilename",
+                    "duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683517184",
+                    "start_time": "2025-10-21T02:01:10.683517184",
+                    "end_time": "2025-10-21T02:01:10.701609216"
+                },
+                {
+                    "function_name": "FIO_compressFilename_srcFile",
+                    "duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683718144",
+                    "start_time": "2025-10-21T02:01:10.683718144",
+                    "end_time": "2025-10-21T02:01:10.701434368"
+                },
+                {
+                    "function_name": "FIO_compressFilename_dstFile",
+                    "duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683855616",
+                    "start_time": "2025-10-21T02:01:10.683855616",
+                    "end_time": "2025-10-21T02:01:10.701425664"
+                },
+                {
+                    "function_name": "FIO_compressFilename_internal",
+                    "duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683944960",
+                    "start_time": "2025-10-21T02:01:10.683944960",
+                    "end_time": "2025-10-21T02:01:10.701365760"
+                },
+                {
+                    "function_name": "FIO_compressZstdFrame",
+                    "duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683952384",
+                    "start_time": "2025-10-21T02:01:10.683952384",
+                    "end_time": "2025-10-21T02:01:10.701355264"
+                },
+                {
+                    "function_name": "ZSTD_compressStream2",
+                    "duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070683960576",
+                    "start_time": "2025-10-21T02:01:10.683960576",
+                    "end_time": "2025-10-21T02:01:10.691584256"
+                },
+                {
+                    "function_name": "ZSTD_compressStream_generic",
+                    "duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684265728",
+                    "start_time": "2025-10-21T02:01:10.684265728",
+                    "end_time": "2025-10-21T02:01:10.691583744"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_public",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309504",
+                    "start_time": "2025-10-21T02:01:10.684309504",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compressContinue_internal",
+                    "duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684309760",
+                    "start_time": "2025-10-21T02:01:10.684309760",
+                    "end_time": "2025-10-21T02:01:10.691582976"
+                },
+                {
+                    "function_name": "ZSTD_compress_frameChunk",
+                    "duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684311552",
+                    "start_time": "2025-10-21T02:01:10.684311552",
+                    "end_time": "2025-10-21T02:01:10.691582720"
+                },
+                {
+                    "function_name": "ZSTD_XXH64_update",
+                    "duration_ns": 4308000,
+                    "self_time_ns": 4286000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070684311808",
+                    "start_time": "2025-10-21T02:01:10.684311808",
+                    "end_time": "2025-10-21T02:01:10.688620032"
+                },
+                {
+                    "function_name": "XXH_readLE64",
+                    "duration_ns": 5000,
+                    "self_time_ns": 5000,
+                    "thread_id": "80742",
+                    "entry_id": "0_1761012070686144256",
+                    "start_time": "2025-10-21T02:01:10.686144256",
+                    "end_time": "2025-10-21T02:01:10.686149376"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_compressFilename",
+                    "total_duration_ns": 18092000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 13.995405001895241
+                },
+                {
+                    "function": "FIO_compressFilename_srcFile",
+                    "total_duration_ns": 17716000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 13.704543169001553
+                },
+                {
+                    "function": "FIO_compressFilename_dstFile",
+                    "total_duration_ns": 17570000,
+                    "self_time_ns": 69000,
+                    "percentage_of_path": 13.591602138143898
+                },
+                {
+                    "function": "FIO_compressFilename_internal",
+                    "total_duration_ns": 17420000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 13.475566832468225
+                },
+                {
+                    "function": "FIO_compressZstdFrame",
+                    "total_duration_ns": 17402000,
+                    "self_time_ns": 21000,
+                    "percentage_of_path": 13.461642595787145
+                },
+                {
+                    "function": "ZSTD_compressStream2",
+                    "total_duration_ns": 7623000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.896914234437731
+                },
+                {
+                    "function": "ZSTD_compressStream_generic",
+                    "total_duration_ns": 7318000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.660975779563862
+                },
+                {
+                    "function": "ZSTD_compressContinue_public",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.62616518786116
+                },
+                {
+                    "function": "ZSTD_compressContinue_internal",
+                    "total_duration_ns": 7273000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.62616518786116
+                },
+                {
+                    "function": "ZSTD_compress_frameChunk",
+                    "total_duration_ns": 7271000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 5.624618050452151
+                }
+            ]
+        }
+    ],
+    "executed_functions": [
+        "ZSTD_compressStream2",
+        "AIO_IOPool_destroy",
+        "ZSTD_cwksp_create",
+        "compareFingerprints",
+        "AIO_IOPool_createThreadPool",
+        "FSE_buildCTable_wksp",
+        "XXH64_round",
+        "ZSTD_encodeSequences",
+        "AIO_IOPool_acquireJob",
+        "AIO_WritePool_create",
+        "UTIL_fstat",
+        "main",
+        "ZSTD_buildCTable",
+        "UTIL_getFileSize",
+        "ZSTD_compressContinue_internal",
+        "FIO_openDstFile",
+        "FIO_compressZstdFrame",
+        "ZSTD_matchState_dictMode",
+        "ZSTD_hash5Ptr",
+        "ZSTD_getCParams",
+        "ZSTD_splitBlock_byChunks",
+        "FIO_createPreferences",
+        "AIO_ReadPool_executeReadJob",
+        "ZSTD_entropyCompressSeqStore",
+        "ZSTD_compressBlock_doubleFast",
+        "ZSTD_compressBegin_internal",
+        "POOL_create_advanced",
+        "ZSTD_cwksp_bump_oversized_duration",
+        "ZSTD_buildSeqStore",
+        "fpDistance",
+        "UTIL_utime",
+        "MEM_readST",
+        "mergeEvents",
+        "FIO_removeFile",
+        "FSE_flushCState",
+        "FIO_compressFilename_dstFile",
+        "ZSTD_resetCCtx_internal",
+        "ZSTD_count",
+        "ZSTD_XXH64_update",
+        "UTIL_isConsole",
+        "AIO_ReadPool_enqueueRead",
+        "AIO_ReadPool_setFile",
+        "POOL_free",
+        "AIO_WritePool_free",
+        "ZSTD_customCalloc",
+        "FIO_compressFilename_srcFile",
+        "UTIL_countCores",
+        "FIO_compressFilename_internal",
+        "ZSTD_encodeSequences_bmi2",
+        "FSE_initCState2",
+        "FIO_openSrcFile",
+        "ZSTD_CCtx_init_compressStream2",
+        "ZSTD_compress_frameChunk",
+        "ZSTD_cParam_clampBounds",
+        "ZSTD_compressContinue_public",
+        "ZSTD_isError",
+        "POOL_thread",
+        "FIO_createCResources",
+        "AIO_WritePool_closeFile",
+        "ZSTD_entropyCompressSeqStore_wExtLitBuffer",
+        "abs64",
+        "XXH_readLE64",
+        "ZSTD_reset_matchState",
+        "AIO_ReadPool_closeFile",
+        "UTIL_stat",
+        "POOL_join",
+        "AIO_ReadPool_create",
+        "ZSTD_cwksp_clean_tables",
+        "ZSTD_getCParams_internal",
+        "ZSTD_cwksp_init",
+        "POOL_create",
+        "ZSTD_compressBlock_doubleFast_noDict_5",
+        "UTIL_fchmod",
+        "AIO_ReadPool_free",
+        "ZSTD_highbit32",
+        "ZSTD_optimalBlockSize",
+        "ZSTD_buildSequencesStatistics",
+        "ZSTD_entropyCompressSeqStore_internal",
+        "ZSTD_limitCopy",
+        "AIO_IOPool_enqueueJob",
+        "ZSTD_compressStream_generic",
+        "AIO_WritePool_enqueueAndReacquireWriteJob",
+        "ZSTD_compressBlock_internal",
+        "AIO_ReadPool_fillBuffer",
+        "AIO_IOPool_createIoJob",
+        "UTIL_setFDStat",
+        "ZSTD_CCtx_setParameter",
+        "XXH_read64",
+        "BIT_flushBits"
+    ]
+}

@@ -1,0 +1,1576 @@
+{
+    "summary": {
+        "num_paths_requested": 10,
+        "num_paths_found": 10,
+        "num_threads": 1,
+        "total_function_calls": 471
+    },
+    "top_k_critical_paths": [
+        {
+            "rank": 1,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 15,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_open_v2",
+                    "duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486252800",
+                    "start_time": "2025-09-28T05:52:56.486252800",
+                    "end_time": "2025-09-28T05:52:56.486530560"
+                },
+                {
+                    "function_name": "openDatabase",
+                    "duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486253568",
+                    "start_time": "2025-09-28T05:52:56.486253568",
+                    "end_time": "2025-09-28T05:52:56.486530304"
+                },
+                {
+                    "function_name": "sqlite3BtreeOpen",
+                    "duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486299904",
+                    "start_time": "2025-09-28T05:52:56.486299904",
+                    "end_time": "2025-09-28T05:52:56.486455808"
+                },
+                {
+                    "function_name": "sqlite3PagerOpen",
+                    "duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486306560",
+                    "start_time": "2025-09-28T05:52:56.486306560",
+                    "end_time": "2025-09-28T05:52:56.486438400"
+                },
+                {
+                    "function_name": "sqlite3OsOpen",
+                    "duration_ns": 57000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486339072",
+                    "start_time": "2025-09-28T05:52:56.486339072",
+                    "end_time": "2025-09-28T05:52:56.486396672"
+                },
+                {
+                    "function_name": "unixOpen",
+                    "duration_ns": 56000,
+                    "self_time_ns": 8000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486339584",
+                    "start_time": "2025-09-28T05:52:56.486339584",
+                    "end_time": "2025-09-28T05:52:56.486396416"
+                },
+                {
+                    "function_name": "fillInUnixFile",
+                    "duration_ns": 26000,
+                    "self_time_ns": 12000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486369792",
+                    "start_time": "2025-09-28T05:52:56.486369792",
+                    "end_time": "2025-09-28T05:52:56.486396160"
+                },
+                {
+                    "function_name": "findInodeInfo",
+                    "duration_ns": 14000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486374144",
+                    "start_time": "2025-09-28T05:52:56.486374144",
+                    "end_time": "2025-09-28T05:52:56.486388480"
+                },
+                {
+                    "function_name": "sqlite3_malloc64",
+                    "duration_ns": 4000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486375680",
+                    "start_time": "2025-09-28T05:52:56.486375680",
+                    "end_time": "2025-09-28T05:52:56.486380288"
+                },
+                {
+                    "function_name": "sqlite3Malloc",
+                    "duration_ns": 3000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486376448",
+                    "start_time": "2025-09-28T05:52:56.486376448",
+                    "end_time": "2025-09-28T05:52:56.486380032"
+                },
+                {
+                    "function_name": "mallocWithAlarm",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486376960",
+                    "start_time": "2025-09-28T05:52:56.486376960",
+                    "end_time": "2025-09-28T05:52:56.486379520"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 27.728544776119403
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 27.35541044776119
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 21.571828358208954
+                },
+                {
+                    "function": "sqlite3_open_v2",
+                    "total_duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.459888059701492
+                },
+                {
+                    "function": "openDatabase",
+                    "total_duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "percentage_of_path": 6.436567164179105
+                },
+                {
+                    "function": "sqlite3BtreeOpen",
+                    "total_duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.614738805970149
+                },
+                {
+                    "function": "sqlite3PagerOpen",
+                    "total_duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.055037313432836
+                },
+                {
+                    "function": "sqlite3OsOpen",
+                    "total_duration_ns": 57000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 1.3292910447761195
+                },
+                {
+                    "function": "unixOpen",
+                    "total_duration_ns": 56000,
+                    "self_time_ns": 8000,
+                    "percentage_of_path": 1.3059701492537312
+                },
+                {
+                    "function": "fillInUnixFile",
+                    "total_duration_ns": 26000,
+                    "self_time_ns": 12000,
+                    "percentage_of_path": 0.6063432835820896
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "thread_id": "26345",
+            "critical_duration_ns": 255000,
+            "critical_duration_formatted": "255.0\u03bcs",
+            "total_duration_ns": 1968999,
+            "path_length": 5,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3_initialize",
+                    "duration_ns": 255000,
+                    "self_time_ns": 24000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485829888",
+                    "start_time": "2025-09-28T05:52:56.485829888",
+                    "end_time": "2025-09-28T05:52:56.486085632"
+                },
+                {
+                    "function_name": "sqlite3RegisterBuiltinFunctions",
+                    "duration_ns": 191000,
+                    "self_time_ns": 12000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485846016",
+                    "start_time": "2025-09-28T05:52:56.485846016",
+                    "end_time": "2025-09-28T05:52:56.486037504"
+                },
+                {
+                    "function_name": "sqlite3InsertBuiltinFuncs",
+                    "duration_ns": 126000,
+                    "self_time_ns": 118000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485910784",
+                    "start_time": "2025-09-28T05:52:56.485910784",
+                    "end_time": "2025-09-28T05:52:56.486037504"
+                },
+                {
+                    "function_name": "sqlite3FunctionSearch",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485916416",
+                    "start_time": "2025-09-28T05:52:56.485916416",
+                    "end_time": "2025-09-28T05:52:56.485918976"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "sqlite3_initialize",
+                    "total_duration_ns": 255000,
+                    "self_time_ns": 24000,
+                    "percentage_of_path": 44.42508710801394
+                },
+                {
+                    "function": "sqlite3RegisterBuiltinFunctions",
+                    "total_duration_ns": 191000,
+                    "self_time_ns": 12000,
+                    "percentage_of_path": 33.27526132404181
+                },
+                {
+                    "function": "sqlite3InsertBuiltinFuncs",
+                    "total_duration_ns": 126000,
+                    "self_time_ns": 118000,
+                    "percentage_of_path": 21.951219512195124
+                },
+                {
+                    "function": "sqlite3FunctionSearch",
+                    "total_duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.34843205574912894
+                }
+            ]
+        },
+        {
+            "rank": 3,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 4,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "one_input_line",
+                    "duration_ns": 6000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486216704",
+                    "start_time": "2025-09-28T05:52:56.486216704",
+                    "end_time": "2025-09-28T05:52:56.486222848"
+                },
+                {
+                    "function_name": "local_getline",
+                    "duration_ns": 5000,
+                    "self_time_ns": 5000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486217216",
+                    "start_time": "2025-09-28T05:52:56.486217216",
+                    "end_time": "2025-09-28T05:52:56.486222592"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 99.08333333333333
+                },
+                {
+                    "function": "one_input_line",
+                    "total_duration_ns": 6000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.5
+                },
+                {
+                    "function": "local_getline",
+                    "total_duration_ns": 5000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 0.4166666666666667
+                }
+            ]
+        },
+        {
+            "rank": 4,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 21,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "shell_exec",
+                    "duration_ns": 244000,
+                    "self_time_ns": 3000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487160576",
+                    "start_time": "2025-09-28T05:52:56.487160576",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3_prepare_v2",
+                    "duration_ns": 241000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487163136",
+                    "start_time": "2025-09-28T05:52:56.487163136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3LockAndPrepare",
+                    "duration_ns": 241000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487163648",
+                    "start_time": "2025-09-28T05:52:56.487163648",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3Prepare",
+                    "duration_ns": 239000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487165184",
+                    "start_time": "2025-09-28T05:52:56.487165184",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3RunParser",
+                    "duration_ns": 238000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487165952",
+                    "start_time": "2025-09-28T05:52:56.487165952",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3Parser",
+                    "duration_ns": 227000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487177216",
+                    "start_time": "2025-09-28T05:52:56.487177216",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "yy_reduce",
+                    "duration_ns": 214000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487190272",
+                    "start_time": "2025-09-28T05:52:56.487190272",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3Pragma",
+                    "duration_ns": 214000,
+                    "self_time_ns": 18000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487190784",
+                    "start_time": "2025-09-28T05:52:56.487190784",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3ReadSchema",
+                    "duration_ns": 193000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487211520",
+                    "start_time": "2025-09-28T05:52:56.487211520",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3Init",
+                    "duration_ns": 193000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487211776",
+                    "start_time": "2025-09-28T05:52:56.487211776",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3InitOne",
+                    "duration_ns": 192000,
+                    "self_time_ns": 9000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487212032",
+                    "start_time": "2025-09-28T05:52:56.487212032",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3InitCallback",
+                    "duration_ns": 131000,
+                    "self_time_ns": 2001,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487212288",
+                    "start_time": "2025-09-28T05:52:56.487212288",
+                    "end_time": "2025-09-28T05:52:56.487343872"
+                },
+                {
+                    "function_name": "sqlite3Prepare",
+                    "duration_ns": 128999,
+                    "self_time_ns": 999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487213568",
+                    "start_time": "2025-09-28T05:52:56.487213568",
+                    "end_time": "2025-09-28T05:52:56.487342848"
+                },
+                {
+                    "function_name": "sqlite3RunParser",
+                    "duration_ns": 128000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487213824",
+                    "start_time": "2025-09-28T05:52:56.487213824",
+                    "end_time": "2025-09-28T05:52:56.487342336"
+                },
+                {
+                    "function_name": "sqlite3Parser",
+                    "duration_ns": 24000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487220736",
+                    "start_time": "2025-09-28T05:52:56.487220736",
+                    "end_time": "2025-09-28T05:52:56.487245568"
+                },
+                {
+                    "function_name": "yy_reduce",
+                    "duration_ns": 22000,
+                    "self_time_ns": 3000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487222016",
+                    "start_time": "2025-09-28T05:52:56.487222016",
+                    "end_time": "2025-09-28T05:52:56.487244288"
+                },
+                {
+                    "function_name": "sqlite3StartTable",
+                    "duration_ns": 19000,
+                    "self_time_ns": 17000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487222528",
+                    "start_time": "2025-09-28T05:52:56.487222528",
+                    "end_time": "2025-09-28T05:52:56.487241984"
+                },
+                {
+                    "function_name": "sqlite3CheckObjectName",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776487226624",
+                    "start_time": "2025-09-28T05:52:56.487226624",
+                    "end_time": "2025-09-28T05:52:56.487228672"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 22.63468925084509
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 22.33010133830218
+                },
+                {
+                    "function": "sqlite3Prepare",
+                    "total_duration_ns": 367999,
+                    "self_time_ns": 1999,
+                    "percentage_of_path": 7.005502951742423
+                },
+                {
+                    "function": "sqlite3RunParser",
+                    "total_duration_ns": 366000,
+                    "self_time_ns": 33000,
+                    "percentage_of_path": 6.967448499419094
+                },
+                {
+                    "function": "sqlite3Parser",
+                    "total_duration_ns": 251000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 4.77822287801692
+                },
+                {
+                    "function": "shell_exec",
+                    "total_duration_ns": 244000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 4.644965666279396
+                },
+                {
+                    "function": "sqlite3_prepare_v2",
+                    "total_duration_ns": 241000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 4.5878554326776
+                },
+                {
+                    "function": "sqlite3LockAndPrepare",
+                    "total_duration_ns": 241000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 4.5878554326776
+                },
+                {
+                    "function": "yy_reduce",
+                    "total_duration_ns": 236000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 4.49267171000794
+                },
+                {
+                    "function": "sqlite3Pragma",
+                    "total_duration_ns": 214000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 4.073863330261437
+                }
+            ]
+        },
+        {
+            "rank": 5,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 11,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_decimal_init",
+                    "duration_ns": 118000,
+                    "self_time_ns": 15000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486662400",
+                    "start_time": "2025-09-28T05:52:56.486662400",
+                    "end_time": "2025-09-28T05:52:56.486780928"
+                },
+                {
+                    "function_name": "sqlite3_create_function",
+                    "duration_ns": 33000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486675712",
+                    "start_time": "2025-09-28T05:52:56.486675712",
+                    "end_time": "2025-09-28T05:52:56.486709504"
+                },
+                {
+                    "function_name": "createFunctionApi",
+                    "duration_ns": 33000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486675968",
+                    "start_time": "2025-09-28T05:52:56.486675968",
+                    "end_time": "2025-09-28T05:52:56.486709504"
+                },
+                {
+                    "function_name": "sqlite3CreateFunc",
+                    "duration_ns": 32000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486676224",
+                    "start_time": "2025-09-28T05:52:56.486676224",
+                    "end_time": "2025-09-28T05:52:56.486708992"
+                },
+                {
+                    "function_name": "sqlite3FindFunction",
+                    "duration_ns": 26000,
+                    "self_time_ns": 3000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486682112",
+                    "start_time": "2025-09-28T05:52:56.486682112",
+                    "end_time": "2025-09-28T05:52:56.486708736"
+                },
+                {
+                    "function_name": "sqlite3HashInsert",
+                    "duration_ns": 23000,
+                    "self_time_ns": 3000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486684928",
+                    "start_time": "2025-09-28T05:52:56.486684928",
+                    "end_time": "2025-09-28T05:52:56.486708480"
+                },
+                {
+                    "function_name": "rehash",
+                    "duration_ns": 18000,
+                    "self_time_ns": 18000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486689024",
+                    "start_time": "2025-09-28T05:52:56.486689024",
+                    "end_time": "2025-09-28T05:52:56.486707968"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 33.305322128851536
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 32.857142857142854
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 25.910364145658267
+                },
+                {
+                    "function": "sqlite3_decimal_init",
+                    "total_duration_ns": 118000,
+                    "self_time_ns": 15000,
+                    "percentage_of_path": 3.305322128851541
+                },
+                {
+                    "function": "sqlite3_create_function",
+                    "total_duration_ns": 33000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.9243697478991597
+                },
+                {
+                    "function": "createFunctionApi",
+                    "total_duration_ns": 33000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.9243697478991597
+                },
+                {
+                    "function": "sqlite3CreateFunc",
+                    "total_duration_ns": 32000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.8963585434173669
+                },
+                {
+                    "function": "sqlite3FindFunction",
+                    "total_duration_ns": 26000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 0.7282913165266106
+                },
+                {
+                    "function": "sqlite3HashInsert",
+                    "total_duration_ns": 23000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 0.6442577030812324
+                },
+                {
+                    "function": "rehash",
+                    "total_duration_ns": 18000,
+                    "self_time_ns": 18000,
+                    "percentage_of_path": 0.5042016806722689
+                }
+            ]
+        },
+        {
+            "rank": 6,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 13,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_open_v2",
+                    "duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486252800",
+                    "start_time": "2025-09-28T05:52:56.486252800",
+                    "end_time": "2025-09-28T05:52:56.486530560"
+                },
+                {
+                    "function_name": "openDatabase",
+                    "duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486253568",
+                    "start_time": "2025-09-28T05:52:56.486253568",
+                    "end_time": "2025-09-28T05:52:56.486530304"
+                },
+                {
+                    "function_name": "sqlite3RegisterPerConnectionBuiltinFunctions",
+                    "duration_ns": 25000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486468096",
+                    "start_time": "2025-09-28T05:52:56.486468096",
+                    "end_time": "2025-09-28T05:52:56.486493696"
+                },
+                {
+                    "function_name": "sqlite3_overload_function",
+                    "duration_ns": 25000,
+                    "self_time_ns": 11000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486468608",
+                    "start_time": "2025-09-28T05:52:56.486468608",
+                    "end_time": "2025-09-28T05:52:56.486493696"
+                },
+                {
+                    "function_name": "sqlite3_create_function_v2",
+                    "duration_ns": 14000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486478848",
+                    "start_time": "2025-09-28T05:52:56.486478848",
+                    "end_time": "2025-09-28T05:52:56.486493440"
+                },
+                {
+                    "function_name": "createFunctionApi",
+                    "duration_ns": 13000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486479616",
+                    "start_time": "2025-09-28T05:52:56.486479616",
+                    "end_time": "2025-09-28T05:52:56.486493184"
+                },
+                {
+                    "function_name": "sqlite3CreateFunc",
+                    "duration_ns": 9000,
+                    "self_time_ns": 3000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486482176",
+                    "start_time": "2025-09-28T05:52:56.486482176",
+                    "end_time": "2025-09-28T05:52:56.486491648"
+                },
+                {
+                    "function_name": "sqlite3FindFunction",
+                    "duration_ns": 6000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486484736",
+                    "start_time": "2025-09-28T05:52:56.486484736",
+                    "end_time": "2025-09-28T05:52:56.486490880"
+                },
+                {
+                    "function_name": "sqlite3HashInsert",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486488320",
+                    "start_time": "2025-09-28T05:52:56.486488320",
+                    "end_time": "2025-09-28T05:52:56.486490624"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 30.223690899847483
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 29.81698017285206
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 23.51296390442298
+                },
+                {
+                    "function": "sqlite3_open_v2",
+                    "total_duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 7.041179461108286
+                },
+                {
+                    "function": "openDatabase",
+                    "total_duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "percentage_of_path": 7.015760040671072
+                },
+                {
+                    "function": "sqlite3RegisterPerConnectionBuiltinFunctions",
+                    "total_duration_ns": 25000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.6354855109303508
+                },
+                {
+                    "function": "sqlite3_overload_function",
+                    "total_duration_ns": 25000,
+                    "self_time_ns": 11000,
+                    "percentage_of_path": 0.6354855109303508
+                },
+                {
+                    "function": "sqlite3_create_function_v2",
+                    "total_duration_ns": 14000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.3558718861209964
+                },
+                {
+                    "function": "createFunctionApi",
+                    "total_duration_ns": 13000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 0.33045246568378245
+                },
+                {
+                    "function": "sqlite3CreateFunc",
+                    "total_duration_ns": 9000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 0.22877478393492628
+                }
+            ]
+        },
+        {
+            "rank": 7,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 9,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_open_v2",
+                    "duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486252800",
+                    "start_time": "2025-09-28T05:52:56.486252800",
+                    "end_time": "2025-09-28T05:52:56.486530560"
+                },
+                {
+                    "function_name": "openDatabase",
+                    "duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486253568",
+                    "start_time": "2025-09-28T05:52:56.486253568",
+                    "end_time": "2025-09-28T05:52:56.486530304"
+                },
+                {
+                    "function_name": "sqlite3BtreeOpen",
+                    "duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486299904",
+                    "start_time": "2025-09-28T05:52:56.486299904",
+                    "end_time": "2025-09-28T05:52:56.486455808"
+                },
+                {
+                    "function_name": "sqlite3PagerSetPagesize",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486447872",
+                    "start_time": "2025-09-28T05:52:56.486447872",
+                    "end_time": "2025-09-28T05:52:56.486449152"
+                },
+                {
+                    "function_name": "pagerFixMaplimit",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486448128",
+                    "start_time": "2025-09-28T05:52:56.486448128",
+                    "end_time": "2025-09-28T05:52:56.486449152"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 29.74731048286215
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 29.347010257693267
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 23.14235676757568
+                },
+                {
+                    "function": "sqlite3_open_v2",
+                    "total_duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.930197648236177
+                },
+                {
+                    "function": "openDatabase",
+                    "total_duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "percentage_of_path": 6.9051788841631225
+                },
+                {
+                    "function": "sqlite3BtreeOpen",
+                    "total_duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.877908431323493
+                },
+                {
+                    "function": "sqlite3PagerSetPagesize",
+                    "total_duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.02501876407305479
+                },
+                {
+                    "function": "pagerFixMaplimit",
+                    "total_duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.02501876407305479
+                }
+            ]
+        },
+        {
+            "rank": 8,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 12,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_open_v2",
+                    "duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486252800",
+                    "start_time": "2025-09-28T05:52:56.486252800",
+                    "end_time": "2025-09-28T05:52:56.486530560"
+                },
+                {
+                    "function_name": "openDatabase",
+                    "duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486253568",
+                    "start_time": "2025-09-28T05:52:56.486253568",
+                    "end_time": "2025-09-28T05:52:56.486530304"
+                },
+                {
+                    "function_name": "sqlite3BtreeOpen",
+                    "duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486299904",
+                    "start_time": "2025-09-28T05:52:56.486299904",
+                    "end_time": "2025-09-28T05:52:56.486455808"
+                },
+                {
+                    "function_name": "sqlite3PagerOpen",
+                    "duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486306560",
+                    "start_time": "2025-09-28T05:52:56.486306560",
+                    "end_time": "2025-09-28T05:52:56.486438400"
+                },
+                {
+                    "function_name": "sqlite3OsFullPathname",
+                    "duration_ns": 19000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486312192",
+                    "start_time": "2025-09-28T05:52:56.486312192",
+                    "end_time": "2025-09-28T05:52:56.486331648"
+                },
+                {
+                    "function_name": "unixFullPathname",
+                    "duration_ns": 18000,
+                    "self_time_ns": 0,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486312704",
+                    "start_time": "2025-09-28T05:52:56.486312704",
+                    "end_time": "2025-09-28T05:52:56.486331392"
+                },
+                {
+                    "function_name": "appendAllPathElements",
+                    "duration_ns": 18000,
+                    "self_time_ns": 15000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486312960",
+                    "start_time": "2025-09-28T05:52:56.486312960",
+                    "end_time": "2025-09-28T05:52:56.486331392"
+                },
+                {
+                    "function_name": "appendOnePathElement",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486326016",
+                    "start_time": "2025-09-28T05:52:56.486326016",
+                    "end_time": "2025-09-28T05:52:56.486328576"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 28.424575663399477
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 28.04207506574229
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 22.11331580205594
+                },
+                {
+                    "function": "sqlite3_open_v2",
+                    "total_duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.6220415969399955
+                },
+                {
+                    "function": "openDatabase",
+                    "total_duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "percentage_of_path": 6.5981353095864215
+                },
+                {
+                    "function": "sqlite3BtreeOpen",
+                    "total_duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.7054745398039683
+                },
+                {
+                    "function": "sqlite3PagerOpen",
+                    "total_duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.1317236433181925
+                },
+                {
+                    "function": "sqlite3OsFullPathname",
+                    "total_duration_ns": 19000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.45421945971790584
+                },
+                {
+                    "function": "unixFullPathname",
+                    "total_duration_ns": 18000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.4303131723643318
+                },
+                {
+                    "function": "appendAllPathElements",
+                    "total_duration_ns": 18000,
+                    "self_time_ns": 15000,
+                    "percentage_of_path": 0.4303131723643318
+                }
+            ]
+        },
+        {
+            "rank": 9,
+            "thread_id": "26345",
+            "critical_duration_ns": 1189000,
+            "critical_duration_formatted": "1.2ms",
+            "total_duration_ns": 1968999,
+            "path_length": 12,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "process_input",
+                    "duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486215168",
+                    "start_time": "2025-09-28T05:52:56.486215168",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "runOneSqlLine",
+                    "duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486231296",
+                    "start_time": "2025-09-28T05:52:56.486231296",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "open_db",
+                    "duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486234112",
+                    "start_time": "2025-09-28T05:52:56.486234112",
+                    "end_time": "2025-09-28T05:52:56.487160064"
+                },
+                {
+                    "function_name": "sqlite3_open_v2",
+                    "duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486252800",
+                    "start_time": "2025-09-28T05:52:56.486252800",
+                    "end_time": "2025-09-28T05:52:56.486530560"
+                },
+                {
+                    "function_name": "openDatabase",
+                    "duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486253568",
+                    "start_time": "2025-09-28T05:52:56.486253568",
+                    "end_time": "2025-09-28T05:52:56.486530304"
+                },
+                {
+                    "function_name": "sqlite3BtreeOpen",
+                    "duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486299904",
+                    "start_time": "2025-09-28T05:52:56.486299904",
+                    "end_time": "2025-09-28T05:52:56.486455808"
+                },
+                {
+                    "function_name": "sqlite3PagerOpen",
+                    "duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486306560",
+                    "start_time": "2025-09-28T05:52:56.486306560",
+                    "end_time": "2025-09-28T05:52:56.486438400"
+                },
+                {
+                    "function_name": "sqlite3OsOpen",
+                    "duration_ns": 57000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486339072",
+                    "start_time": "2025-09-28T05:52:56.486339072",
+                    "end_time": "2025-09-28T05:52:56.486396672"
+                },
+                {
+                    "function_name": "unixOpen",
+                    "duration_ns": 56000,
+                    "self_time_ns": 8000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486339584",
+                    "start_time": "2025-09-28T05:52:56.486339584",
+                    "end_time": "2025-09-28T05:52:56.486396416"
+                },
+                {
+                    "function_name": "robust_open",
+                    "duration_ns": 22000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486347264",
+                    "start_time": "2025-09-28T05:52:56.486347264",
+                    "end_time": "2025-09-28T05:52:56.486369280"
+                },
+                {
+                    "function_name": "posixOpen",
+                    "duration_ns": 21000,
+                    "self_time_ns": 21000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486347520",
+                    "start_time": "2025-09-28T05:52:56.486347520",
+                    "end_time": "2025-09-28T05:52:56.486368768"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "process_input",
+                    "total_duration_ns": 1189000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 27.76739841195703
+                },
+                {
+                    "function": "runOneSqlLine",
+                    "total_duration_ns": 1173000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 27.39374124241009
+                },
+                {
+                    "function": "open_db",
+                    "total_duration_ns": 925000,
+                    "self_time_ns": 52000,
+                    "percentage_of_path": 21.60205511443251
+                },
+                {
+                    "function": "sqlite3_open_v2",
+                    "total_duration_ns": 277000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.468939747781411
+                },
+                {
+                    "function": "openDatabase",
+                    "total_duration_ns": 276000,
+                    "self_time_ns": 41000,
+                    "percentage_of_path": 6.445586174684727
+                },
+                {
+                    "function": "sqlite3BtreeOpen",
+                    "total_duration_ns": 155000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.619803829985988
+                },
+                {
+                    "function": "sqlite3PagerOpen",
+                    "total_duration_ns": 131000,
+                    "self_time_ns": 23000,
+                    "percentage_of_path": 3.0593180756655767
+                },
+                {
+                    "function": "sqlite3OsOpen",
+                    "total_duration_ns": 57000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 1.3311536665109762
+                },
+                {
+                    "function": "unixOpen",
+                    "total_duration_ns": 56000,
+                    "self_time_ns": 8000,
+                    "percentage_of_path": 1.3078000934142924
+                },
+                {
+                    "function": "robust_open",
+                    "total_duration_ns": 22000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.5137786081270435
+                }
+            ]
+        },
+        {
+            "rank": 10,
+            "thread_id": "26345",
+            "critical_duration_ns": 255000,
+            "critical_duration_formatted": "255.0\u03bcs",
+            "total_duration_ns": 1968999,
+            "path_length": 6,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 1968999,
+                    "self_time_ns": 396999,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485435136",
+                    "start_time": "2025-09-28T05:52:56.485435136",
+                    "end_time": "2025-09-28T05:52:56.487404801"
+                },
+                {
+                    "function_name": "sqlite3_initialize",
+                    "duration_ns": 255000,
+                    "self_time_ns": 24000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776485829888",
+                    "start_time": "2025-09-28T05:52:56.485829888",
+                    "end_time": "2025-09-28T05:52:56.486085632"
+                },
+                {
+                    "function_name": "sqlite3OsInit",
+                    "duration_ns": 23000,
+                    "self_time_ns": 7000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486051840",
+                    "start_time": "2025-09-28T05:52:56.486051840",
+                    "end_time": "2025-09-28T05:52:56.486075648"
+                },
+                {
+                    "function_name": "sqlite3_os_init",
+                    "duration_ns": 15000,
+                    "self_time_ns": 12000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486059520",
+                    "start_time": "2025-09-28T05:52:56.486059520",
+                    "end_time": "2025-09-28T05:52:56.486074624"
+                },
+                {
+                    "function_name": "sqlite3_vfs_register",
+                    "duration_ns": 3000,
+                    "self_time_ns": 1000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486067200",
+                    "start_time": "2025-09-28T05:52:56.486067200",
+                    "end_time": "2025-09-28T05:52:56.486070528"
+                },
+                {
+                    "function_name": "sqlite3_initialize",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "26345",
+                    "entry_id": "0_1759038776486067456",
+                    "start_time": "2025-09-28T05:52:56.486067456",
+                    "end_time": "2025-09-28T05:52:56.486069504"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "sqlite3_initialize",
+                    "total_duration_ns": 257000,
+                    "self_time_ns": 26000,
+                    "percentage_of_path": 86.24161073825503
+                },
+                {
+                    "function": "sqlite3OsInit",
+                    "total_duration_ns": 23000,
+                    "self_time_ns": 7000,
+                    "percentage_of_path": 7.718120805369128
+                },
+                {
+                    "function": "sqlite3_os_init",
+                    "total_duration_ns": 15000,
+                    "self_time_ns": 12000,
+                    "percentage_of_path": 5.033557046979865
+                },
+                {
+                    "function": "sqlite3_vfs_register",
+                    "total_duration_ns": 3000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 1.006711409395973
+                }
+            ]
+        }
+    ]
+}

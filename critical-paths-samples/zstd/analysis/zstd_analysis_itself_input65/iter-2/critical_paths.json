@@ -1,0 +1,864 @@
+{
+    "summary": {
+        "num_paths_requested": 10,
+        "num_paths_found": 7,
+        "num_threads": 3,
+        "total_function_calls": 1762
+    },
+    "top_k_critical_paths": [
+        {
+            "rank": 1,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_createDResources",
+                    "duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275082240",
+                    "start_time": "2025-10-21T01:40:08.275082240",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_WritePool_create",
+                    "duration_ns": 105000,
+                    "self_time_ns": 34000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101440",
+                    "start_time": "2025-10-21T01:40:08.275101440",
+                    "end_time": "2025-10-21T01:40:08.275206912"
+                },
+                {
+                    "function_name": "AIO_IOPool_createThreadPool",
+                    "duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101696",
+                    "start_time": "2025-10-21T01:40:08.275101696",
+                    "end_time": "2025-10-21T01:40:08.275173376"
+                },
+                {
+                    "function_name": "AIO_IOPool_init",
+                    "duration_ns": 104000,
+                    "self_time_ns": 16000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101696",
+                    "start_time": "2025-10-21T01:40:08.275101696",
+                    "end_time": "2025-10-21T01:40:08.275206656"
+                },
+                {
+                    "function_name": "POOL_create_advanced",
+                    "duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101952",
+                    "start_time": "2025-10-21T01:40:08.275101952",
+                    "end_time": "2025-10-21T01:40:08.275173120"
+                },
+                {
+                    "function_name": "POOL_create",
+                    "duration_ns": 71000,
+                    "self_time_ns": 71000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101952",
+                    "start_time": "2025-10-21T01:40:08.275101952",
+                    "end_time": "2025-10-21T01:40:08.275173376"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 97.5515873015873
+                },
+                {
+                    "function": "FIO_createDResources",
+                    "total_duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "percentage_of_path": 0.7738095238095238
+                },
+                {
+                    "function": "AIO_WritePool_create",
+                    "total_duration_ns": 105000,
+                    "self_time_ns": 34000,
+                    "percentage_of_path": 0.4166666666666667
+                },
+                {
+                    "function": "AIO_IOPool_init",
+                    "total_duration_ns": 104000,
+                    "self_time_ns": 16000,
+                    "percentage_of_path": 0.41269841269841273
+                },
+                {
+                    "function": "AIO_IOPool_createThreadPool",
+                    "total_duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.28174603174603174
+                },
+                {
+                    "function": "POOL_create_advanced",
+                    "total_duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.28174603174603174
+                },
+                {
+                    "function": "POOL_create",
+                    "total_duration_ns": 71000,
+                    "self_time_ns": 71000,
+                    "percentage_of_path": 0.28174603174603174
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "thread_id": "44827",
+            "critical_duration_ns": 183000,
+            "critical_duration_formatted": "183.0\u03bcs",
+            "total_duration_ns": 24803000,
+            "path_length": 4,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "default_nbThreads",
+                    "duration_ns": 183000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274887936",
+                    "start_time": "2025-10-21T01:40:08.274887936",
+                    "end_time": "2025-10-21T01:40:08.275071232"
+                },
+                {
+                    "function_name": "UTIL_countLogicalCores",
+                    "duration_ns": 182000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274888192",
+                    "start_time": "2025-10-21T01:40:08.274888192",
+                    "end_time": "2025-10-21T01:40:08.275070464"
+                },
+                {
+                    "function_name": "UTIL_countCores",
+                    "duration_ns": 181000,
+                    "self_time_ns": 181000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274888448",
+                    "start_time": "2025-10-21T01:40:08.274888448",
+                    "end_time": "2025-10-21T01:40:08.275070208"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "default_nbThreads",
+                    "total_duration_ns": 183000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 33.51648351648351
+                },
+                {
+                    "function": "UTIL_countLogicalCores",
+                    "total_duration_ns": 182000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 33.33333333333333
+                },
+                {
+                    "function": "UTIL_countCores",
+                    "total_duration_ns": 181000,
+                    "self_time_ns": 181000,
+                    "percentage_of_path": 33.150183150183146
+                }
+            ]
+        },
+        {
+            "rank": 3,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 7,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_freeDResources",
+                    "duration_ns": 183000,
+                    "self_time_ns": 2000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299481600",
+                    "start_time": "2025-10-21T01:40:08.299481600",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "AIO_WritePool_free",
+                    "duration_ns": 107000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299483648",
+                    "start_time": "2025-10-21T01:40:08.299483648",
+                    "end_time": "2025-10-21T01:40:08.299590656"
+                },
+                {
+                    "function_name": "AIO_IOPool_destroy",
+                    "duration_ns": 106000,
+                    "self_time_ns": 8000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299483904",
+                    "start_time": "2025-10-21T01:40:08.299483904",
+                    "end_time": "2025-10-21T01:40:08.299590144"
+                },
+                {
+                    "function_name": "POOL_join",
+                    "duration_ns": 98000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299484160",
+                    "start_time": "2025-10-21T01:40:08.299484160",
+                    "end_time": "2025-10-21T01:40:08.299582976"
+                },
+                {
+                    "function_name": "POOL_free",
+                    "duration_ns": 100000,
+                    "self_time_ns": 100000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299484160",
+                    "start_time": "2025-10-21T01:40:08.299484160",
+                    "end_time": "2025-10-21T01:40:08.299584512"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 97.64070381697582
+                },
+                {
+                    "function": "FIO_freeDResources",
+                    "total_duration_ns": 183000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.7268538745680582
+                },
+                {
+                    "function": "AIO_WritePool_free",
+                    "total_duration_ns": 107000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.42499106327203395
+                },
+                {
+                    "function": "AIO_IOPool_destroy",
+                    "total_duration_ns": 106000,
+                    "self_time_ns": 8000,
+                    "percentage_of_path": 0.4210191841760337
+                },
+                {
+                    "function": "POOL_free",
+                    "total_duration_ns": 100000,
+                    "self_time_ns": 100000,
+                    "percentage_of_path": 0.3971879096000318
+                },
+                {
+                    "function": "POOL_join",
+                    "total_duration_ns": 98000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.38924415140803115
+                }
+            ]
+        },
+        {
+            "rank": 4,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_createDResources",
+                    "duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275082240",
+                    "start_time": "2025-10-21T01:40:08.275082240",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_ReadPool_create",
+                    "duration_ns": 70000,
+                    "self_time_ns": 4000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207168",
+                    "start_time": "2025-10-21T01:40:08.275207168",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_IOPool_init",
+                    "duration_ns": 66000,
+                    "self_time_ns": 26000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207680",
+                    "start_time": "2025-10-21T01:40:08.275207680",
+                    "end_time": "2025-10-21T01:40:08.275274240"
+                },
+                {
+                    "function_name": "AIO_IOPool_createThreadPool",
+                    "duration_ns": 39000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207680",
+                    "start_time": "2025-10-21T01:40:08.275207680",
+                    "end_time": "2025-10-21T01:40:08.275247360"
+                },
+                {
+                    "function_name": "POOL_create_advanced",
+                    "duration_ns": 39000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207936",
+                    "start_time": "2025-10-21T01:40:08.275207936",
+                    "end_time": "2025-10-21T01:40:08.275247104"
+                },
+                {
+                    "function_name": "POOL_create",
+                    "duration_ns": 39000,
+                    "self_time_ns": 39000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207936",
+                    "start_time": "2025-10-21T01:40:08.275207936",
+                    "end_time": "2025-10-21T01:40:08.275247360"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 98.21021932803325
+                },
+                {
+                    "function": "FIO_createDResources",
+                    "total_duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "percentage_of_path": 0.779033997842675
+                },
+                {
+                    "function": "AIO_ReadPool_create",
+                    "total_duration_ns": 70000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 0.2796532299948064
+                },
+                {
+                    "function": "AIO_IOPool_init",
+                    "total_duration_ns": 66000,
+                    "self_time_ns": 26000,
+                    "percentage_of_path": 0.26367304542367465
+                },
+                {
+                    "function": "AIO_IOPool_createThreadPool",
+                    "total_duration_ns": 39000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.15580679956853502
+                },
+                {
+                    "function": "POOL_create_advanced",
+                    "total_duration_ns": 39000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.15580679956853502
+                },
+                {
+                    "function": "POOL_create",
+                    "total_duration_ns": 39000,
+                    "self_time_ns": 39000,
+                    "percentage_of_path": 0.15580679956853502
+                }
+            ]
+        },
+        {
+            "rank": 5,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 7,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_createDResources",
+                    "duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275082240",
+                    "start_time": "2025-10-21T01:40:08.275082240",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_WritePool_create",
+                    "duration_ns": 105000,
+                    "self_time_ns": 34000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101440",
+                    "start_time": "2025-10-21T01:40:08.275101440",
+                    "end_time": "2025-10-21T01:40:08.275206912"
+                },
+                {
+                    "function_name": "AIO_IOPool_createThreadPool",
+                    "duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101696",
+                    "start_time": "2025-10-21T01:40:08.275101696",
+                    "end_time": "2025-10-21T01:40:08.275173376"
+                },
+                {
+                    "function_name": "AIO_IOPool_init",
+                    "duration_ns": 104000,
+                    "self_time_ns": 16000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275101696",
+                    "start_time": "2025-10-21T01:40:08.275101696",
+                    "end_time": "2025-10-21T01:40:08.275206656"
+                },
+                {
+                    "function_name": "AIO_IOPool_createIoJob",
+                    "duration_ns": 13000,
+                    "self_time_ns": 13000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275186176",
+                    "start_time": "2025-10-21T01:40:08.275186176",
+                    "end_time": "2025-10-21T01:40:08.275199744"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 98.05352798053528
+                },
+                {
+                    "function": "FIO_createDResources",
+                    "total_duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "percentage_of_path": 0.7777910733516812
+                },
+                {
+                    "function": "AIO_WritePool_create",
+                    "total_duration_ns": 105000,
+                    "self_time_ns": 34000,
+                    "percentage_of_path": 0.41881057795859755
+                },
+                {
+                    "function": "AIO_IOPool_init",
+                    "total_duration_ns": 104000,
+                    "self_time_ns": 16000,
+                    "percentage_of_path": 0.4148219057875633
+                },
+                {
+                    "function": "AIO_IOPool_createThreadPool",
+                    "total_duration_ns": 71000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.28319572414343264
+                },
+                {
+                    "function": "AIO_IOPool_createIoJob",
+                    "total_duration_ns": 13000,
+                    "self_time_ns": 13000,
+                    "percentage_of_path": 0.05185273822344541
+                }
+            ]
+        },
+        {
+            "rank": 6,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_freeDResources",
+                    "duration_ns": 183000,
+                    "self_time_ns": 2000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299481600",
+                    "start_time": "2025-10-21T01:40:08.299481600",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "AIO_ReadPool_free",
+                    "duration_ns": 74000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299590656",
+                    "start_time": "2025-10-21T01:40:08.299590656",
+                    "end_time": "2025-10-21T01:40:08.299665152"
+                },
+                {
+                    "function_name": "AIO_IOPool_destroy",
+                    "duration_ns": 73000,
+                    "self_time_ns": 10000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299591168",
+                    "start_time": "2025-10-21T01:40:08.299591168",
+                    "end_time": "2025-10-21T01:40:08.299664640"
+                },
+                {
+                    "function_name": "POOL_join",
+                    "duration_ns": 63000,
+                    "self_time_ns": 0,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299591680",
+                    "start_time": "2025-10-21T01:40:08.299591680",
+                    "end_time": "2025-10-21T01:40:08.299655424"
+                },
+                {
+                    "function_name": "POOL_free",
+                    "duration_ns": 66000,
+                    "self_time_ns": 65000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299591680",
+                    "start_time": "2025-10-21T01:40:08.299591680",
+                    "end_time": "2025-10-21T01:40:08.299657728"
+                },
+                {
+                    "function_name": "ZSTD_customFree",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808299655680",
+                    "start_time": "2025-10-21T01:40:08.299655680",
+                    "end_time": "2025-10-21T01:40:08.299656704"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 98.16315936589068
+                },
+                {
+                    "function": "FIO_freeDResources",
+                    "total_duration_ns": 183000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.7307431218304516
+                },
+                {
+                    "function": "AIO_ReadPool_free",
+                    "total_duration_ns": 74000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.29549175418280554
+                },
+                {
+                    "function": "AIO_IOPool_destroy",
+                    "total_duration_ns": 73000,
+                    "self_time_ns": 10000,
+                    "percentage_of_path": 0.2914986223695244
+                },
+                {
+                    "function": "POOL_free",
+                    "total_duration_ns": 66000,
+                    "self_time_ns": 65000,
+                    "percentage_of_path": 0.2635466996765563
+                },
+                {
+                    "function": "POOL_join",
+                    "total_duration_ns": 63000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.25156730423671286
+                },
+                {
+                    "function": "ZSTD_customFree",
+                    "total_duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.003993131813281156
+                }
+            ]
+        },
+        {
+            "rank": 7,
+            "thread_id": "44827",
+            "critical_duration_ns": 24583000,
+            "critical_duration_formatted": "24.6ms",
+            "total_duration_ns": 24803000,
+            "path_length": 6,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 24803000,
+                    "self_time_ns": 31000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808274865920",
+                    "start_time": "2025-10-21T01:40:08.274865920",
+                    "end_time": "2025-10-21T01:40:08.299668992"
+                },
+                {
+                    "function_name": "FIO_decompressFilename",
+                    "duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275081984",
+                    "start_time": "2025-10-21T01:40:08.275081984",
+                    "end_time": "2025-10-21T01:40:08.299665408"
+                },
+                {
+                    "function_name": "FIO_createDResources",
+                    "duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275082240",
+                    "start_time": "2025-10-21T01:40:08.275082240",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_ReadPool_create",
+                    "duration_ns": 70000,
+                    "self_time_ns": 4000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207168",
+                    "start_time": "2025-10-21T01:40:08.275207168",
+                    "end_time": "2025-10-21T01:40:08.275277312"
+                },
+                {
+                    "function_name": "AIO_IOPool_init",
+                    "duration_ns": 66000,
+                    "self_time_ns": 26000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275207680",
+                    "start_time": "2025-10-21T01:40:08.275207680",
+                    "end_time": "2025-10-21T01:40:08.275274240"
+                },
+                {
+                    "function_name": "AIO_IOPool_createIoJob",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "44827",
+                    "entry_id": "0_1761010808275256064",
+                    "start_time": "2025-10-21T01:40:08.275256064",
+                    "end_time": "2025-10-21T01:40:08.275257088"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "FIO_decompressFilename",
+                    "total_duration_ns": 24583000,
+                    "self_time_ns": 24198000,
+                    "percentage_of_path": 98.66746939594621
+                },
+                {
+                    "function": "FIO_createDResources",
+                    "total_duration_ns": 195000,
+                    "self_time_ns": 19000,
+                    "percentage_of_path": 0.78266104756171
+                },
+                {
+                    "function": "AIO_ReadPool_create",
+                    "total_duration_ns": 70000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 0.28095524784266507
+                },
+                {
+                    "function": "AIO_IOPool_init",
+                    "total_duration_ns": 66000,
+                    "self_time_ns": 26000,
+                    "percentage_of_path": 0.26490066225165565
+                },
+                {
+                    "function": "AIO_IOPool_createIoJob",
+                    "total_duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 0.004013646397752358
+                }
+            ]
+        }
+    ],
+    "executed_functions": [
+        "UTIL_isLink",
+        "AIO_IOPool_destroy",
+        "FIO_decompressFilename",
+        "AIO_IOPool_createThreadPool",
+        "HUF_decompress4X2_DCtx_wksp",
+        "ZSTD_copy16",
+        "FSE_decompress_wksp_body_bmi2",
+        "default_nbThreads",
+        "BIT_readBitsFast",
+        "FIO_createDResources",
+        "XXH64_round",
+        "FSE_readNCount_body_bmi2",
+        "AIO_IOPool_acquireJob",
+        "AIO_WritePool_create",
+        "UTIL_fstat",
+        "ZSTD_buildSeqTable",
+        "main",
+        "HUF_buildDEltX2U64",
+        "FIO_freePreferences",
+        "ZSTD_decodeLiteralsBlock",
+        "HUF_decompress4X2_usingDTable_internal_fast",
+        "AIO_ReadPool_executeReadJob",
+        "FSE_readNCount",
+        "ZSTD_decompressSequences",
+        "ZSTD_decompressContinue",
+        "HUF_fillDTableX2Level2",
+        "BIT_lookBitsFast",
+        "HUF_DecompressFastArgs_init",
+        "FSE_readNCount_body_default",
+        "FIO_decompressFrames",
+        "ZSTD_XXH64_update",
+        "AIO_ReadPool_enqueueRead",
+        "HUF_buildDEltX2",
+        "FIO_decompressSrcFile",
+        "AIO_ReadPool_setFile",
+        "POOL_free",
+        "FIO_decompressZstdFrame",
+        "AIO_WritePool_free",
+        "MEM_readLE32",
+        "ZSTD_customMalloc",
+        "FSE_decompress_wksp_bmi2",
+        "UTIL_countCores",
+        "ZSTD_decompressSequences_bmi2",
+        "ZSTD_countLeadingZeros32",
+        "AIO_IOPool_init",
+        "FIO_openSrcFile",
+        "HUF_fillDTableX2ForWeight",
+        "HUF_fillDTableX2",
+        "POOL_thread",
+        "exeNameMatch",
+        "BIT_reloadDStream_internal",
+        "ZSTD_customFree",
+        "HUF_buildDEltX2U32",
+        "FIO_freeDResources",
+        "ZSTD_decompressBlock_internal",
+        "FSE_buildDTable_internal",
+        "XXH_readLE64",
+        "FSE_decodeSymbolFast",
+        "ZSTD_createDCtx_internal",
+        "AIO_ReadPool_create",
+        "HUF_readDTableX2_wksp",
+        "AIO_ReadPool_startReading",
+        "HUF_initFastDStream",
+        "POOL_create",
+        "MEM_readLEST",
+        "HUF_readStats_wksp",
+        "ZSTD_decodeSeqHeaders",
+        "MEM_read64",
+        "AIO_ReadPool_free",
+        "ZSTD_buildFSETable_body_bmi2",
+        "ZSTD_highbit32",
+        "MEM_64bits",
+        "ZSTD_limitCopy",
+        "AIO_IOPool_enqueueJob",
+        "FIO_decompressDstFile",
+        "ZSTD_buildFSETable",
+        "HUF_decompress4X_hufOnly_wksp",
+        "ZSTD_decompressContinueStream",
+        "ERR_isError",
+        "AIO_WritePool_enqueueAndReacquireWriteJob",
+        "AIO_IOPool_createIoJob",
+        "ZSTD_initDCtx_internal",
+        "MEM_readLE64",
+        "AIO_IOPool_threadPoolActive",
+        "HUF_decompress4X_usingDTable",
+        "ZSTD_decompressStream",
+        "UTIL_countLogicalCores",
+        "MEM_isLittleEndian",
+        "XXH_read64",
+        "MEM_32bits"
+    ]
+}

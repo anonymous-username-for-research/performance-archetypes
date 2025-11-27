@@ -1,0 +1,2167 @@
+{
+    "summary": {
+        "num_paths_requested": 10,
+        "num_paths_found": 10,
+        "num_threads": 3,
+        "total_function_calls": 1332
+    },
+    "top_k_critical_paths": [
+        {
+            "rank": 1,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 20,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "try_decode_frame",
+                    "duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665313280",
+                    "start_time": "2025-10-25T19:08:59.665313280",
+                    "end_time": "2025-10-25T19:08:59.668099840"
+                },
+                {
+                    "function_name": "avcodec_send_packet",
+                    "duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665314304",
+                    "start_time": "2025-10-25T19:08:59.665314304",
+                    "end_time": "2025-10-25T19:08:59.668090624"
+                },
+                {
+                    "function_name": "decode_receive_frame_internal",
+                    "duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668090368"
+                },
+                {
+                    "function_name": "ff_decode_receive_frame_internal",
+                    "duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668089600"
+                },
+                {
+                    "function_name": "decode_simple_receive_frame",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316352",
+                    "start_time": "2025-10-25T19:08:59.665316352",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "decode_simple_internal",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316608",
+                    "start_time": "2025-10-25T19:08:59.665316608",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "h264_decode_frame",
+                    "duration_ns": 2767000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665320192",
+                    "start_time": "2025-10-25T19:08:59.665320192",
+                    "end_time": "2025-10-25T19:08:59.668087808"
+                },
+                {
+                    "function_name": "decode_nal_units",
+                    "duration_ns": 2755000,
+                    "self_time_ns": 15000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665320448",
+                    "start_time": "2025-10-25T19:08:59.665320448",
+                    "end_time": "2025-10-25T19:08:59.668075776"
+                },
+                {
+                    "function_name": "ff_h264_execute_decode_slices",
+                    "duration_ns": 2507000,
+                    "self_time_ns": 2506000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665567232",
+                    "start_time": "2025-10-25T19:08:59.665567232",
+                    "end_time": "2025-10-25T19:08:59.668075008"
+                },
+                {
+                    "function_name": "fast_malloc",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665567488",
+                    "start_time": "2025-10-25T19:08:59.665567488",
+                    "end_time": "2025-10-25T19:08:59.665569280"
+                },
+                {
+                    "function_name": "alloc_scratch_buffers",
+                    "duration_ns": 5000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665567488",
+                    "start_time": "2025-10-25T19:08:59.665567488",
+                    "end_time": "2025-10-25T19:08:59.665573376"
+                },
+                {
+                    "function_name": "av_fast_malloc",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665567488",
+                    "start_time": "2025-10-25T19:08:59.665567488",
+                    "end_time": "2025-10-25T19:08:59.665569280"
+                },
+                {
+                    "function_name": "decode_slice",
+                    "duration_ns": 2507000,
+                    "self_time_ns": 637000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665567488",
+                    "start_time": "2025-10-25T19:08:59.665567488",
+                    "end_time": "2025-10-25T19:08:59.668075008"
+                },
+                {
+                    "function_name": "ff_h264_decode_mb_cavlc",
+                    "duration_ns": 54000,
+                    "self_time_ns": 38000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665778432",
+                    "start_time": "2025-10-25T19:08:59.665778432",
+                    "end_time": "2025-10-25T19:08:59.665832960"
+                },
+                {
+                    "function_name": "decode_residual",
+                    "duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665779200",
+                    "start_time": "2025-10-25T19:08:59.665779200",
+                    "end_time": "2025-10-25T19:08:59.665784064"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 13.867926339842926
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 12.792595579622482
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 12.719626706607523
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 8.285807554198591
+                },
+                {
+                    "function": "try_decode_frame",
+                    "total_duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 5.349770532096703
+                },
+                {
+                    "function": "avcodec_send_packet",
+                    "total_duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.3305681970927665
+                },
+                {
+                    "function": "decode_receive_frame_internal",
+                    "total_duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.326727730091979
+                },
+                {
+                    "function": "ff_decode_receive_frame_internal",
+                    "total_duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.3248074965915855
+                },
+                {
+                    "function": "decode_simple_receive_frame",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.322887263091191
+                },
+                {
+                    "function": "decode_simple_internal",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 5.322887263091191
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "thread_id": "823041",
+            "critical_duration_ns": 1118000,
+            "critical_duration_formatted": "1.1ms",
+            "total_duration_ns": 8894000,
+            "path_length": 3,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "transcode",
+                    "duration_ns": 1118000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669702656",
+                    "start_time": "2025-10-25T19:08:59.669702656",
+                    "end_time": "2025-10-25T19:08:59.670821376"
+                },
+                {
+                    "function_name": "sch_wait",
+                    "duration_ns": 442000,
+                    "self_time_ns": 442000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339670114816",
+                    "start_time": "2025-10-25T19:08:59.670114816",
+                    "end_time": "2025-10-25T19:08:59.670557696"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "transcode",
+                    "total_duration_ns": 1118000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 71.66666666666667
+                },
+                {
+                    "function": "sch_wait",
+                    "total_duration_ns": 442000,
+                    "self_time_ns": 442000,
+                    "percentage_of_path": 28.333333333333332
+                }
+            ]
+        },
+        {
+            "rank": 3,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 12,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 512000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669171200",
+                    "start_time": "2025-10-25T19:08:59.669171200",
+                    "end_time": "2025-10-25T19:08:59.669683712"
+                },
+                {
+                    "function_name": "of_open",
+                    "duration_ns": 464000,
+                    "self_time_ns": 137000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669182976",
+                    "start_time": "2025-10-25T19:08:59.669182976",
+                    "end_time": "2025-10-25T19:08:59.669647360"
+                },
+                {
+                    "function_name": "create_streams",
+                    "duration_ns": 244000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669313024",
+                    "start_time": "2025-10-25T19:08:59.669313024",
+                    "end_time": "2025-10-25T19:08:59.669557504"
+                },
+                {
+                    "function_name": "map_auto_video",
+                    "duration_ns": 121000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669313536",
+                    "start_time": "2025-10-25T19:08:59.669313536",
+                    "end_time": "2025-10-25T19:08:59.669434624"
+                },
+                {
+                    "function_name": "ost_add",
+                    "duration_ns": 119000,
+                    "self_time_ns": 82000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669315072",
+                    "start_time": "2025-10-25T19:08:59.669315072",
+                    "end_time": "2025-10-25T19:08:59.669434624"
+                },
+                {
+                    "function_name": "avcodec_alloc_context3",
+                    "duration_ns": 37000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669330432",
+                    "start_time": "2025-10-25T19:08:59.669330432",
+                    "end_time": "2025-10-25T19:08:59.669368320"
+                },
+                {
+                    "function_name": "streamcopy_init",
+                    "duration_ns": 103000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669330432",
+                    "start_time": "2025-10-25T19:08:59.669330432",
+                    "end_time": "2025-10-25T19:08:59.669434368"
+                },
+                {
+                    "function_name": "avcodec_free_context",
+                    "duration_ns": 62000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669371904",
+                    "start_time": "2025-10-25T19:08:59.669371904",
+                    "end_time": "2025-10-25T19:08:59.669434368"
+                },
+                {
+                    "function_name": "ff_codec_close",
+                    "duration_ns": 60000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669371904",
+                    "start_time": "2025-10-25T19:08:59.669371904",
+                    "end_time": "2025-10-25T19:08:59.669432064"
+                },
+                {
+                    "function_name": "av_opt_free",
+                    "duration_ns": 58000,
+                    "self_time_ns": 58000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669372928",
+                    "start_time": "2025-10-25T19:08:59.669372928",
+                    "end_time": "2025-10-25T19:08:59.669431552"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 80.22661630748722
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 512000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.687624972228393
+                },
+                {
+                    "function": "of_open",
+                    "total_duration_ns": 464000,
+                    "self_time_ns": 137000,
+                    "percentage_of_path": 5.154410131081981
+                },
+                {
+                    "function": "create_streams",
+                    "total_duration_ns": 244000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 2.7105087758275936
+                },
+                {
+                    "function": "map_auto_video",
+                    "total_duration_ns": 121000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 1.3441457453899135
+                },
+                {
+                    "function": "ost_add",
+                    "total_duration_ns": 119000,
+                    "self_time_ns": 82000,
+                    "percentage_of_path": 1.3219284603421462
+                },
+                {
+                    "function": "streamcopy_init",
+                    "total_duration_ns": 103000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 1.144190179960009
+                },
+                {
+                    "function": "avcodec_free_context",
+                    "total_duration_ns": 62000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.6887358364807821
+                },
+                {
+                    "function": "ff_codec_close",
+                    "total_duration_ns": 60000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.6665185514330149
+                },
+                {
+                    "function": "av_opt_free",
+                    "total_duration_ns": 58000,
+                    "self_time_ns": 58000,
+                    "percentage_of_path": 0.6443012663852477
+                }
+            ]
+        },
+        {
+            "rank": 4,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 4,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "uninit_options",
+                    "duration_ns": 35000,
+                    "self_time_ns": 35000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339669134848",
+                    "start_time": "2025-10-25T19:08:59.669134848",
+                    "end_time": "2025-10-25T19:08:59.669170688"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 51.88591134420576
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 47.86263380990013
+                },
+                {
+                    "function": "uninit_options",
+                    "total_duration_ns": 35000,
+                    "self_time_ns": 35000,
+                    "percentage_of_path": 0.2514548458941016
+                }
+            ]
+        },
+        {
+            "rank": 5,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 11,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_open_input",
+                    "duration_ns": 1830000,
+                    "self_time_ns": 29000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662543360",
+                    "start_time": "2025-10-25T19:08:59.662543360",
+                    "end_time": "2025-10-25T19:08:59.664374016"
+                },
+                {
+                    "function_name": "init_input",
+                    "duration_ns": 1000000,
+                    "self_time_ns": 61000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662556160",
+                    "start_time": "2025-10-25T19:08:59.662556160",
+                    "end_time": "2025-10-25T19:08:59.663556608"
+                },
+                {
+                    "function_name": "av_probe_input_buffer2",
+                    "duration_ns": 852000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662703616",
+                    "start_time": "2025-10-25T19:08:59.662703616",
+                    "end_time": "2025-10-25T19:08:59.663556608"
+                },
+                {
+                    "function_name": "av_probe_input_format3",
+                    "duration_ns": 824000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662721536",
+                    "start_time": "2025-10-25T19:08:59.662721536",
+                    "end_time": "2025-10-25T19:08:59.663546112"
+                },
+                {
+                    "function_name": "av_probe_input_format2",
+                    "duration_ns": 824000,
+                    "self_time_ns": 401000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662721536",
+                    "start_time": "2025-10-25T19:08:59.662721536",
+                    "end_time": "2025-10-25T19:08:59.663546112"
+                },
+                {
+                    "function_name": "mp3_read_probe",
+                    "duration_ns": 352000,
+                    "self_time_ns": 346000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662990848",
+                    "start_time": "2025-10-25T19:08:59.662990848",
+                    "end_time": "2025-10-25T19:08:59.663343104"
+                },
+                {
+                    "function_name": "avpriv_mpegaudio_decode_header",
+                    "duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339663234304",
+                    "start_time": "2025-10-25T19:08:59.663234304",
+                    "end_time": "2025-10-25T19:08:59.663238912"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 27.571199511338474
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 25.433305337100098
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 25.28823394670535
+                },
+                {
+                    "function": "avformat_open_input",
+                    "total_duration_ns": 1830000,
+                    "self_time_ns": 29000,
+                    "percentage_of_path": 6.986332747957548
+                },
+                {
+                    "function": "init_input",
+                    "total_duration_ns": 1000000,
+                    "self_time_ns": 61000,
+                    "percentage_of_path": 3.8176681682828133
+                },
+                {
+                    "function": "av_probe_input_buffer2",
+                    "total_duration_ns": 852000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 3.2526532793769567
+                },
+                {
+                    "function": "av_probe_input_format3",
+                    "total_duration_ns": 824000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 3.145758570665038
+                },
+                {
+                    "function": "av_probe_input_format2",
+                    "total_duration_ns": 824000,
+                    "self_time_ns": 401000,
+                    "percentage_of_path": 3.145758570665038
+                },
+                {
+                    "function": "mp3_read_probe",
+                    "total_duration_ns": 352000,
+                    "self_time_ns": 346000,
+                    "percentage_of_path": 1.3438191952355503
+                },
+                {
+                    "function": "avpriv_mpegaudio_decode_header",
+                    "total_duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "percentage_of_path": 0.015270672673131251
+                }
+            ]
+        },
+        {
+            "rank": 6,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 14,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "avcodec_open2",
+                    "duration_ns": 647000,
+                    "self_time_ns": 448000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664559616",
+                    "start_time": "2025-10-25T19:08:59.664559616",
+                    "end_time": "2025-10-25T19:08:59.665207040"
+                },
+                {
+                    "function_name": "av_opt_set_dict2",
+                    "duration_ns": 122000,
+                    "self_time_ns": 63000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664749056",
+                    "start_time": "2025-10-25T19:08:59.664749056",
+                    "end_time": "2025-10-25T19:08:59.664871936"
+                },
+                {
+                    "function_name": "av_opt_set",
+                    "duration_ns": 45000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664824320",
+                    "start_time": "2025-10-25T19:08:59.664824320",
+                    "end_time": "2025-10-25T19:08:59.664869888"
+                },
+                {
+                    "function_name": "opt_set_elem",
+                    "duration_ns": 31000,
+                    "self_time_ns": 5000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664838400",
+                    "start_time": "2025-10-25T19:08:59.664838400",
+                    "end_time": "2025-10-25T19:08:59.664869888"
+                },
+                {
+                    "function_name": "av_opt_find2.localalias",
+                    "duration_ns": 26000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664838656",
+                    "start_time": "2025-10-25T19:08:59.664838656",
+                    "end_time": "2025-10-25T19:08:59.664865280"
+                },
+                {
+                    "function_name": "av_opt_find",
+                    "duration_ns": 26000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664838656",
+                    "start_time": "2025-10-25T19:08:59.664838656",
+                    "end_time": "2025-10-25T19:08:59.664865280"
+                },
+                {
+                    "function_name": "set_string_number",
+                    "duration_ns": 31000,
+                    "self_time_ns": 27000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664838656",
+                    "start_time": "2025-10-25T19:08:59.664838656",
+                    "end_time": "2025-10-25T19:08:59.664869888"
+                },
+                {
+                    "function_name": "av_expr_parse_and_eval",
+                    "duration_ns": 4000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664865536",
+                    "start_time": "2025-10-25T19:08:59.664865536",
+                    "end_time": "2025-10-25T19:08:59.664869632"
+                },
+                {
+                    "function_name": "av_expr_parse",
+                    "duration_ns": 3000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664865536",
+                    "start_time": "2025-10-25T19:08:59.664865536",
+                    "end_time": "2025-10-25T19:08:59.664868608"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 28.037891140616505
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 25.863809301964437
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 25.716282320055907
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 16.752077024613712
+                },
+                {
+                    "function": "avcodec_open2",
+                    "total_duration_ns": 647000,
+                    "self_time_ns": 448000,
+                    "percentage_of_path": 2.5118409814426585
+                },
+                {
+                    "function": "av_opt_set_dict2",
+                    "total_duration_ns": 122000,
+                    "self_time_ns": 63000,
+                    "percentage_of_path": 0.4736392577063437
+                },
+                {
+                    "function": "av_opt_set",
+                    "total_duration_ns": 45000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.17470300489168414
+                },
+                {
+                    "function": "opt_set_elem",
+                    "total_duration_ns": 31000,
+                    "self_time_ns": 5000,
+                    "percentage_of_path": 0.1203509589253824
+                },
+                {
+                    "function": "set_string_number",
+                    "total_duration_ns": 31000,
+                    "self_time_ns": 27000,
+                    "percentage_of_path": 0.1203509589253824
+                },
+                {
+                    "function": "av_opt_find2.localalias",
+                    "total_duration_ns": 26000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 0.10093951393741749
+                }
+            ]
+        },
+        {
+            "rank": 7,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 8,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "try_decode_frame",
+                    "duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665313280",
+                    "start_time": "2025-10-25T19:08:59.665313280",
+                    "end_time": "2025-10-25T19:08:59.668099840"
+                },
+                {
+                    "function_name": "avcodec_receive_frame",
+                    "duration_ns": 4000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668090624",
+                    "start_time": "2025-10-25T19:08:59.668090624",
+                    "end_time": "2025-10-25T19:08:59.668094720"
+                },
+                {
+                    "function_name": "av_frame_unref",
+                    "duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668090624",
+                    "start_time": "2025-10-25T19:08:59.668090624",
+                    "end_time": "2025-10-25T19:08:59.668092928"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 26.152453376787975
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 24.124569980083287
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 23.986963606735472
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 15.625565815679884
+                },
+                {
+                    "function": "try_decode_frame",
+                    "total_duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 10.08871989860583
+                },
+                {
+                    "function": "avcodec_receive_frame",
+                    "total_duration_ns": 4000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.014484881405033498
+                },
+                {
+                    "function": "av_frame_unref",
+                    "total_duration_ns": 2000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 0.007242440702516749
+                }
+            ]
+        },
+        {
+            "rank": 8,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 14,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "try_decode_frame",
+                    "duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665313280",
+                    "start_time": "2025-10-25T19:08:59.665313280",
+                    "end_time": "2025-10-25T19:08:59.668099840"
+                },
+                {
+                    "function_name": "avcodec_send_packet",
+                    "duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665314304",
+                    "start_time": "2025-10-25T19:08:59.665314304",
+                    "end_time": "2025-10-25T19:08:59.668090624"
+                },
+                {
+                    "function_name": "decode_receive_frame_internal",
+                    "duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668090368"
+                },
+                {
+                    "function_name": "ff_decode_receive_frame_internal",
+                    "duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668089600"
+                },
+                {
+                    "function_name": "decode_simple_receive_frame",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316352",
+                    "start_time": "2025-10-25T19:08:59.665316352",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "decode_simple_internal",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316608",
+                    "start_time": "2025-10-25T19:08:59.665316608",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "ff_decode_get_packet",
+                    "duration_ns": 2000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665317376",
+                    "start_time": "2025-10-25T19:08:59.665317376",
+                    "end_time": "2025-10-25T19:08:59.665319936"
+                },
+                {
+                    "function_name": "decode_get_packet",
+                    "duration_ns": 1000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665318144",
+                    "start_time": "2025-10-25T19:08:59.665318144",
+                    "end_time": "2025-10-25T19:08:59.665319936"
+                },
+                {
+                    "function_name": "extract_packet_props",
+                    "duration_ns": 1000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665318656",
+                    "start_time": "2025-10-25T19:08:59.665318656",
+                    "end_time": "2025-10-25T19:08:59.665319680"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 17.410800385728063
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 16.060752169720345
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 15.96914175506268
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 10.402603664416587
+                },
+                {
+                    "function": "try_decode_frame",
+                    "total_duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 6.7164898746383805
+                },
+                {
+                    "function": "avcodec_send_packet",
+                    "total_duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 6.692381870781099
+                },
+                {
+                    "function": "decode_receive_frame_internal",
+                    "total_duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.6875602700096435
+                },
+                {
+                    "function": "ff_decode_receive_frame_internal",
+                    "total_duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.685149469623915
+                },
+                {
+                    "function": "decode_simple_receive_frame",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 6.682738669238188
+                },
+                {
+                    "function": "decode_simple_internal",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 6.682738669238188
+                }
+            ]
+        },
+        {
+            "rank": 9,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 16,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "try_decode_frame",
+                    "duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665313280",
+                    "start_time": "2025-10-25T19:08:59.665313280",
+                    "end_time": "2025-10-25T19:08:59.668099840"
+                },
+                {
+                    "function_name": "avcodec_send_packet",
+                    "duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665314304",
+                    "start_time": "2025-10-25T19:08:59.665314304",
+                    "end_time": "2025-10-25T19:08:59.668090624"
+                },
+                {
+                    "function_name": "decode_receive_frame_internal",
+                    "duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668090368"
+                },
+                {
+                    "function_name": "ff_decode_receive_frame_internal",
+                    "duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668089600"
+                },
+                {
+                    "function_name": "decode_simple_receive_frame",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316352",
+                    "start_time": "2025-10-25T19:08:59.665316352",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "decode_simple_internal",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316608",
+                    "start_time": "2025-10-25T19:08:59.665316608",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "h264_decode_frame",
+                    "duration_ns": 2767000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665320192",
+                    "start_time": "2025-10-25T19:08:59.665320192",
+                    "end_time": "2025-10-25T19:08:59.668087808"
+                },
+                {
+                    "function_name": "finalize_frame",
+                    "duration_ns": 9000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668077824",
+                    "start_time": "2025-10-25T19:08:59.668077824",
+                    "end_time": "2025-10-25T19:08:59.668087552"
+                },
+                {
+                    "function_name": "output_frame",
+                    "duration_ns": 9000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668077824",
+                    "start_time": "2025-10-25T19:08:59.668077824",
+                    "end_time": "2025-10-25T19:08:59.668087296"
+                },
+                {
+                    "function_name": "av_frame_ref",
+                    "duration_ns": 6000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668077824",
+                    "start_time": "2025-10-25T19:08:59.668077824",
+                    "end_time": "2025-10-25T19:08:59.668083968"
+                },
+                {
+                    "function_name": "frame_copy_props",
+                    "duration_ns": 4000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339668078080",
+                    "start_time": "2025-10-25T19:08:59.668078080",
+                    "end_time": "2025-10-25T19:08:59.668082432"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 16.31316211515439
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 15.048225700797364
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 14.962390729823136
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 9.74678683562603
+                },
+                {
+                    "function": "try_decode_frame",
+                    "total_duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 6.293058661426215
+                },
+                {
+                    "function": "avcodec_send_packet",
+                    "total_duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 6.27047051116984
+                },
+                {
+                    "function": "decode_receive_frame_internal",
+                    "total_duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.265952881118565
+                },
+                {
+                    "function": "ff_decode_receive_frame_internal",
+                    "total_duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 6.263694066092927
+                },
+                {
+                    "function": "decode_simple_receive_frame",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 6.26143525106729
+                },
+                {
+                    "function": "decode_simple_internal",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 6.26143525106729
+                }
+            ]
+        },
+        {
+            "rank": 10,
+            "thread_id": "823041",
+            "critical_duration_ns": 7222000,
+            "critical_duration_formatted": "7.2ms",
+            "total_duration_ns": 8894000,
+            "path_length": 25,
+            "functions": [
+                {
+                    "function_name": "main",
+                    "duration_ns": 8894000,
+                    "self_time_ns": 169000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662165248",
+                    "start_time": "2025-10-25T19:08:59.662165248",
+                    "end_time": "2025-10-25T19:08:59.671059712"
+                },
+                {
+                    "function_name": "ffmpeg_parse_options",
+                    "duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662477312",
+                    "start_time": "2025-10-25T19:08:59.662477312",
+                    "end_time": "2025-10-25T19:08:59.669699328"
+                },
+                {
+                    "function_name": "open_files",
+                    "duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662508800",
+                    "start_time": "2025-10-25T19:08:59.662508800",
+                    "end_time": "2025-10-25T19:08:59.669171200"
+                },
+                {
+                    "function_name": "ifile_open",
+                    "duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339662510080",
+                    "start_time": "2025-10-25T19:08:59.662510080",
+                    "end_time": "2025-10-25T19:08:59.669134592"
+                },
+                {
+                    "function_name": "avformat_find_stream_info",
+                    "duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339664454912",
+                    "start_time": "2025-10-25T19:08:59.664454912",
+                    "end_time": "2025-10-25T19:08:59.668770816"
+                },
+                {
+                    "function_name": "try_decode_frame",
+                    "duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665313280",
+                    "start_time": "2025-10-25T19:08:59.665313280",
+                    "end_time": "2025-10-25T19:08:59.668099840"
+                },
+                {
+                    "function_name": "avcodec_send_packet",
+                    "duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665314304",
+                    "start_time": "2025-10-25T19:08:59.665314304",
+                    "end_time": "2025-10-25T19:08:59.668090624"
+                },
+                {
+                    "function_name": "decode_receive_frame_internal",
+                    "duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668090368"
+                },
+                {
+                    "function_name": "ff_decode_receive_frame_internal",
+                    "duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316096",
+                    "start_time": "2025-10-25T19:08:59.665316096",
+                    "end_time": "2025-10-25T19:08:59.668089600"
+                },
+                {
+                    "function_name": "decode_simple_receive_frame",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316352",
+                    "start_time": "2025-10-25T19:08:59.665316352",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "decode_simple_internal",
+                    "duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665316608",
+                    "start_time": "2025-10-25T19:08:59.665316608",
+                    "end_time": "2025-10-25T19:08:59.668089344"
+                },
+                {
+                    "function_name": "h264_decode_frame",
+                    "duration_ns": 2767000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665320192",
+                    "start_time": "2025-10-25T19:08:59.665320192",
+                    "end_time": "2025-10-25T19:08:59.668087808"
+                },
+                {
+                    "function_name": "decode_nal_units",
+                    "duration_ns": 2755000,
+                    "self_time_ns": 15000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665320448",
+                    "start_time": "2025-10-25T19:08:59.665320448",
+                    "end_time": "2025-10-25T19:08:59.668075776"
+                },
+                {
+                    "function_name": "ff_h264_queue_decode_slice",
+                    "duration_ns": 155000,
+                    "self_time_ns": 3000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665411328",
+                    "start_time": "2025-10-25T19:08:59.665411328",
+                    "end_time": "2025-10-25T19:08:59.665566976"
+                },
+                {
+                    "function_name": "h264_field_start",
+                    "duration_ns": 141000,
+                    "self_time_ns": 4000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665414912",
+                    "start_time": "2025-10-25T19:08:59.665414912",
+                    "end_time": "2025-10-25T19:08:59.665555968"
+                },
+                {
+                    "function_name": "h264_frame_start",
+                    "duration_ns": 98000,
+                    "self_time_ns": 12000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665455104",
+                    "start_time": "2025-10-25T19:08:59.665455104",
+                    "end_time": "2025-10-25T19:08:59.665553152"
+                },
+                {
+                    "function_name": "alloc_picture",
+                    "duration_ns": 82000,
+                    "self_time_ns": 14000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665456128",
+                    "start_time": "2025-10-25T19:08:59.665456128",
+                    "end_time": "2025-10-25T19:08:59.665539072"
+                },
+                {
+                    "function_name": "ff_get_buffer",
+                    "duration_ns": 64000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665456384",
+                    "start_time": "2025-10-25T19:08:59.665456384",
+                    "end_time": "2025-10-25T19:08:59.665520640"
+                },
+                {
+                    "function_name": "ff_thread_get_ext_buffer",
+                    "duration_ns": 64000,
+                    "self_time_ns": 56000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665456384",
+                    "start_time": "2025-10-25T19:08:59.665456384",
+                    "end_time": "2025-10-25T19:08:59.665520896"
+                },
+                {
+                    "function_name": "update_frame_pool",
+                    "duration_ns": 5000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665463296",
+                    "start_time": "2025-10-25T19:08:59.665463296",
+                    "end_time": "2025-10-25T19:08:59.665468928"
+                },
+                {
+                    "function_name": "avcodec_default_get_buffer2",
+                    "duration_ns": 55000,
+                    "self_time_ns": 6000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665463296",
+                    "start_time": "2025-10-25T19:08:59.665463296",
+                    "end_time": "2025-10-25T19:08:59.665518848"
+                },
+                {
+                    "function_name": "video_get_buffer",
+                    "duration_ns": 49000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665468928",
+                    "start_time": "2025-10-25T19:08:59.665468928",
+                    "end_time": "2025-10-25T19:08:59.665518848"
+                },
+                {
+                    "function_name": "av_buffer_pool_get",
+                    "duration_ns": 17000,
+                    "self_time_ns": 0,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665501440",
+                    "start_time": "2025-10-25T19:08:59.665501440",
+                    "end_time": "2025-10-25T19:08:59.665518592"
+                },
+                {
+                    "function_name": "pool_alloc_buffer",
+                    "duration_ns": 17000,
+                    "self_time_ns": 1000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665501440",
+                    "start_time": "2025-10-25T19:08:59.665501440",
+                    "end_time": "2025-10-25T19:08:59.665518592"
+                },
+                {
+                    "function_name": "av_buffer_allocz",
+                    "duration_ns": 16000,
+                    "self_time_ns": 16000,
+                    "thread_id": "823041",
+                    "entry_id": "0_1761419339665501696",
+                    "start_time": "2025-10-25T19:08:59.665501696",
+                    "end_time": "2025-10-25T19:08:59.665518336"
+                }
+            ],
+            "bottlenecks": [
+                {
+                    "function": "ffmpeg_parse_options",
+                    "total_duration_ns": 7222000,
+                    "self_time_ns": 9000,
+                    "percentage_of_path": 15.121123929565963
+                },
+                {
+                    "function": "open_files",
+                    "total_duration_ns": 6662000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 13.948619166265363
+                },
+                {
+                    "function": "ifile_open",
+                    "total_duration_ns": 6624000,
+                    "self_time_ns": 22000,
+                    "percentage_of_path": 13.869056343041395
+                },
+                {
+                    "function": "avformat_find_stream_info",
+                    "total_duration_ns": 4315000,
+                    "self_time_ns": 31000,
+                    "percentage_of_path": 9.034567952932308
+                },
+                {
+                    "function": "try_decode_frame",
+                    "total_duration_ns": 2786000,
+                    "self_time_ns": 6000,
+                    "percentage_of_path": 5.833211197420489
+                },
+                {
+                    "function": "avcodec_send_packet",
+                    "total_duration_ns": 2776000,
+                    "self_time_ns": 2000,
+                    "percentage_of_path": 5.81227361236155
+                },
+                {
+                    "function": "decode_receive_frame_internal",
+                    "total_duration_ns": 2774000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.808086095349763
+                },
+                {
+                    "function": "ff_decode_receive_frame_internal",
+                    "total_duration_ns": 2773000,
+                    "self_time_ns": 1000,
+                    "percentage_of_path": 5.805992336843868
+                },
+                {
+                    "function": "decode_simple_receive_frame",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 0,
+                    "percentage_of_path": 5.803898578337974
+                },
+                {
+                    "function": "decode_simple_internal",
+                    "total_duration_ns": 2772000,
+                    "self_time_ns": 3000,
+                    "percentage_of_path": 5.803898578337974
+                }
+            ]
+        }
+    ],
+    "executed_functions": [
+        "ff_decode_get_packet",
+        "dump_disposition",
+        "get_bits_long",
+        "streamcopy_init",
+        "ff_h2645_extract_rbsp",
+        "choose_decoder",
+        "decode_simple_receive_frame",
+        "mov_read_default",
+        "h264_parse",
+        "av_realloc_array",
+        "url_alloc_for_protocol",
+        "demux_stream_alloc",
+        "uninit_parse_context",
+        "dump_metadata",
+        "av_fifo_freep2",
+        "av_match_ext",
+        "av_parser_parse2",
+        "compare_vlcspec",
+        "av_fifo_read",
+        "of_open",
+        "avio_context_free",
+        "create_streams",
+        "avformat_close_input",
+        "avcodec_free_context",
+        "ifile_open",
+        "ff_default_get_supported_config",
+        "avcodec_parameters_alloc",
+        "ist_add",
+        "ff_vlc_init_table_sparse",
+        "av_dump_format",
+        "pkt_move",
+        "codec_close",
+        "ff_read_packet",
+        "avpriv_find_start_code",
+        "dump_stream_format",
+        "av_rescale_q",
+        "mpegts_probe",
+        "demux_send",
+        "write_matrix",
+        "av_free",
+        "av_dict_get",
+        "reset_packet",
+        "ifile_close",
+        "ff_refstruct_unref",
+        "av_dict_set",
+        "init_context_defaults",
+        "av_opt_get",
+        "mov_build_index",
+        "av_packet_side_data_free",
+        "mov_read_stsz",
+        "av_bprint_init",
+        "ansi_fputs",
+        "uninit_options",
+        "av_buffer_pool_get",
+        "pred16x16_vertical_8_c",
+        "ff_h264_decode_picture_parameter_set",
+        "mov_write_ilst_tag",
+        "ff_h264_sei_uninit",
+        "avformat_free_context",
+        "h264_slice_header_init",
+        "get_level_prefix",
+        "str2id",
+        "ff_h264_hl_decode_mb",
+        "avformat_new_stream",
+        "avio_wb32",
+        "ff_free_stream",
+        "h264_decode_end",
+        "ff_h264_unref_picture",
+        "ffio_fdopen",
+        "av_guess_format.localalias",
+        "get_metadata_lang",
+        "ff_h264_build_ref_list",
+        "av_dict_free",
+        "av_frame_unref",
+        "ffio_open_whitelist",
+        "ff_rfps_calculate",
+        "mov_free_stream_context",
+        "send_to_mux",
+        "colored_fputs",
+        "av_write_trailer",
+        "fill_decode_neighbors",
+        "map_auto_subtitle",
+        "mov_write_moov_tag",
+        "ff_mov_cenc_free",
+        "deinit_muxer",
+        "ff_decode_receive_frame_internal",
+        "ost_free",
+        "find_option",
+        "av_buffer_unref",
+        "pgm_probe",
+        "flush_buffer",
+        "try_decode_frame",
+        "thread_set_name",
+        "loas_probe",
+        "avio_rl32",
+        "avio_seek.localalias",
+        "ff_h2645_packet_uninit",
+        "map_auto_video",
+        "get_bits",
+        "mov_write_trailer",
+        "alloc_picture",
+        "fifo_check_space",
+        "avformat_find_stream_info",
+        "set_string_number",
+        "avformat_write_header",
+        "sch_free",
+        "file_write",
+        "write_number",
+        "set_number",
+        "h264_free_pic",
+        "get_ue_golomb_long",
+        "show_bits",
+        "estimate_timings",
+        "retry_transfer_wrapper",
+        "ff_er_frame_start",
+        "decode_get_packet",
+        "mov_read_hdlr",
+        "parse_nal_units",
+        "av_demuxer_iterate",
+        "video_get_buffer",
+        "av_bprintf",
+        "init_scan_tables",
+        "ff_h264_decode_mb_cavlc",
+        "h264_parse_nal_header",
+        "file_read",
+        "mov_read_stco",
+        "decode_residual",
+        "mov_write_int8_metadata",
+        "find_probe_decoder",
+        "setup_sync_queues",
+        "av_buffer_pool_init",
+        "sch_alloc",
+        "vp9_get_supported_config",
+        "avio_rl16",
+        "find_codec",
+        "decode_extradata_ps",
+        "get_bits_left",
+        "av_ts_make_time_string",
+        "ffurl_get_protocols",
+        "av_fifo_can_read",
+        "av_opt_set_defaults2",
+        "av_packet_free_side_data",
+        "ff_toupper4",
+        "av_codec_init_static",
+        "av_log_default_callback",
+        "pjs_probe",
+        "ff_vlc_init_tables",
+        "h264_decode_frame",
+        "avcodec_send_packet",
+        "mov_free",
+        "sch_mux_receive",
+        "sanitize",
+        "ff_refstruct_alloc_ext",
+        "decode_nal_units",
+        "mov_read_moov",
+        "h264_close",
+        "mov_read_udta_string",
+        "receive_locked",
+        "ff_vlc_init_sparse",
+        "av_buffer_create",
+        "av_opt_set_defaults",
+        "ffurl_connect",
+        "init_cavlc_level_tab",
+        "tq_free",
+        "av_malloc.localalias",
+        "fc_close",
+        "ff_codec_close",
+        "av_vbprintf",
+        "av_frame_alloc",
+        "av_vlog",
+        "ff_h264_alloc_tables",
+        "ffurl_close",
+        "av_match_name",
+        "append_packet_chunked",
+        "av_packet_free",
+        "ff_h2645_packet_split",
+        "mjpeg_get_supported_config",
+        "av_d2q",
+        "av_expr_parse",
+        "hl_decode_mb_444_simple_8",
+        "get_nalsize",
+        "av_calloc",
+        "av_isdigit",
+        "h264_frame_start",
+        "av_strlcat",
+        "locate_option",
+        "av_log",
+        "format_line",
+        "avio_closep",
+        "av_opt_set_dict2",
+        "h264_init_ps",
+        "h264_init_pic",
+        "demux_send_for_stream",
+        "task_stop",
+        "ff_mov_read_stsd_entries",
+        "parse_packet",
+        "av_buffer_alloc",
+        "ff_rfps_add_frame",
+        "get_std_framerate",
+        "ff_text_read",
+        "av_packet_move_ref",
+        "av_frame_side_data_free",
+        "msnwc_tcp_probe",
+        "avpriv_mpegaudio_decode_header",
+        "pool_alloc_buffer",
+        "fill_buffer",
+        "ff_text_init_buf",
+        "mov_write_string_metadata",
+        "mov_parse_stsd_video",
+        "write_option",
+        "apc_probe",
+        "av_codec_is_encoder",
+        "av_buffer_allocz",
+        "codec_parameters_reset",
+        "print_report",
+        "ff_h264_luma_dc_dequant_idct_8_c",
+        "av_realloc",
+        "writeout",
+        "input_packet_process",
+        "init_input",
+        "avs3video_probe",
+        "av_codec_is_decoder",
+        "buffer_replace",
+        "mp3_read_probe",
+        "avcodec_parameters_copy",
+        "mov_codec_id",
+        "sch_wait",
+        "decode_unregistered_user_data",
+        "av_tolower",
+        "av_opt_set_dict",
+        "ff_aom_uninit_film_grain_params",
+        "av_freep",
+        "mov_init",
+        "avcodec_default_get_buffer2",
+        "av_opt_free",
+        "ff_refstruct_allocz",
+        "decode_simple_internal",
+        "mov_read_close",
+        "print_fps",
+        "ff_h264_ps_uninit",
+        "av_parse_time",
+        "av_probe_input_format3",
+        "parse_optgroup",
+        "validate_avframe_allocation",
+        "ff_h264_free_tables",
+        "sch_demux_send",
+        "img_read_probe",
+        "opt_set_elem",
+        "mov_read_tkhd",
+        "mov_read_packet",
+        "split_commandline",
+        "opt_free_array",
+        "sami_probe",
+        "ts_discontinuity_detect",
+        "main",
+        "init_dequant_tables",
+        "av_dict_copy",
+        "iamf_probe",
+        "term_init",
+        "mov_write_loci_tag",
+        "compute_pkt_fields",
+        "ff_spdif_probe",
+        "av_strstart",
+        "mov_read_mvhd",
+        "skip_bits",
+        "decode_slice",
+        "av_dict_set_int",
+        "vlc_common_end",
+        "copy_meta",
+        "of_write_trailer",
+        "av_rescale_q_rnd",
+        "msp_probe",
+        "h264_initialise_ref_list",
+        "input_thread",
+        "ff_guess_image2_codec",
+        "mov_write_header",
+        "av_realloc_f",
+        "mov_read_stsd",
+        "select_from_pts_buffer",
+        "ff_h2645_sei_message_decode",
+        "ff_mpa_check_header",
+        "avio_close",
+        "ff_h264_ref_picture",
+        "ff_h264_execute_decode_slices",
+        "av_frame_ref",
+        "av_mallocz",
+        "avio_wl32",
+        "av_toupper",
+        "demux_thread_uninit",
+        "refstruct_pool_get_ext",
+        "opt_free_elem",
+        "tq_send",
+        "av_get_packet",
+        "avcodec_string",
+        "ffurl_read2",
+        "av_codec_iterate",
+        "alloc_rbsp_buffer",
+        "ff_refstruct_ref_c",
+        "opt_match_per_stream_str",
+        "read_frame_internal",
+        "av_strcasecmp",
+        "redspark_probe",
+        "ff_h264_remove_all_refs",
+        "av_read_frame",
+        "sch_add_demux",
+        "avio_rb32",
+        "ts_fixup",
+        "avcodec_alloc_context3",
+        "av_fast_mallocz",
+        "h261_probe",
+        "get_se_golomb",
+        "ost_add",
+        "demux_stream_send_to_dst",
+        "task_start",
+        "mov_write_meta_tag",
+        "av_fourcc_make_string",
+        "ff_h2645_sei_reset",
+        "get_pixel_format",
+        "av_probe_input_buffer2",
+        "mov_read_glbl",
+        "ff_get_format",
+        "mov_read_meta",
+        "task_wrapper",
+        "ffmpeg_cleanup",
+        "ff_decode_frame_props",
+        "avcodec_open2",
+        "ff_refstruct_alloc_ext_c",
+        "analyze",
+        "ff_decode_preinit",
+        "h264_decode_init",
+        "side_data_map",
+        "avio_rb16",
+        "ff_h264_idct_add16intra_8_c",
+        "av_dict_iterate",
+        "av_strdup",
+        "avcodec_parameters_to_context",
+        "av_opt_next",
+        "mov_read_stts",
+        "ff_h264_sei_decode",
+        "mux_final_stats",
+        "tq_receive",
+        "ffurl_seek2",
+        "pred_non_zero_count",
+        "set_string",
+        "decode_extradata_ps_mp4",
+        "mlp_probe",
+        "ff_is_intra_only",
+        "get_bits1",
+        "build_table",
+        "mov_write_udta_tag",
+        "set_string_binary",
+        "dump_dictionary",
+        "av_fifo_write",
+        "pred16x16_plane_compat_8_c",
+        "file_open",
+        "av_opt_find",
+        "adts_aac_probe",
+        "avformat_alloc_context",
+        "ff_h264_idct_dc_add_8_c",
+        "mov_write_mvhd_tag",
+        "ff_configure_buffers_for_index",
+        "pred16x16_horizontal_8_c",
+        "mov_read_header",
+        "av_packet_unref",
+        "avpriv_open",
+        "h264_slice_init",
+        "ff_text_r8",
+        "sch_stop",
+        "av_frame_free",
+        "avcodec_parameters_free",
+        "ff_h264_decode_init_vlc",
+        "ff_h264_decode_extradata",
+        "allocate_array_elem",
+        "ff_h264_idct_add_8_c",
+        "av_bprint_grow",
+        "av_opt_set",
+        "ff_vlc_init_tables_sparse",
+        "av_probe_input_format2",
+        "parse_loglevel",
+        "frame_copy_props",
+        "decode_bsfs_init",
+        "muxer_thread",
+        "nut_probe",
+        "mov_read_ftyp",
+        "av_strncasecmp",
+        "avformat_alloc_output_context2",
+        "print_all_libs_info",
+        "ts_discontinuity_process",
+        "open_files",
+        "ff_h264_queue_decode_slice",
+        "ff_thread_get_ext_buffer",
+        "of_free",
+        "av_opt_find2.localalias",
+        "avcodec_find_decoder",
+        "avformat_init_output",
+        "sch_start",
+        "mov_probe",
+        "ffmpeg_parse_options",
+        "av_fast_padded_malloc",
+        "do_send"
+    ]
+}
