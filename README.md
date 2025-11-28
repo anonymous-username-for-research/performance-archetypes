@@ -144,3 +144,9 @@ python -m src.research.rq2 sqlite openssl zstd ffmpeg --base-path .
 ```
 python -m src.research.rq3 sqlite openssl zstd ffmpeg --base-path .
 ```
+
+## Dataset
+
+The complete dataset is available at [doi.org/10.5281/zenodo.17736094](https://doi.org/10.5281/zenodo.17736094). Note that the extracted dataset exceeds 12GB in size.
+
+A sample subset of critical paths is provided in the [critical-paths-samples](./critical-paths-samples/) folder within this repository for convenience.
